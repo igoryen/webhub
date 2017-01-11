@@ -1,0 +1,18 @@
+1. alphabetically sort links in one array by name
+2. alphabetically sort links in one array by category
+3. This is a prototype
+4. the method that will create the whole DOM
+5. grab the id for the list of categories
+6. create a div doxel which will be the container for the links of one category
+7. create the heading doxel for the container of links of one category
+8. assign the text to the heading doxel for the container of links of one category
+9. create the list doxel for the links of one category
+10. assign class to the list doxel
+11. alphabetically sort the links inside the current category array 
+12. Create a list item for the current link
+13. Create an anchor for the list item
+14. grab the "start" id 
+15. alphabetically sort the objects by name
+16. 'objects' is an array of link onjects
+17. 'id' is the id attribute of the tag
+18. an array of link objects added in a random systemless order

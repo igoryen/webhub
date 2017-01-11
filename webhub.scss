@@ -1,0 +1,25 @@
+body {
+	font-family: Verdana, sans-serif;
+	padding-left: 1em;
+}
+
+div {
+	margin-top: 0.5em;
+}
+#heading {
+	font-size: 2em;
+	color: lightgray;
+	font-weight: bolder;
+}
+img {
+    width: 100%;
+}
+#catlist {
+    h3 {
+        color: gray;
+    }
+    li {
+        font-family: "Verdana", sans-serif;
+        font-size: small;
+    }
+}
