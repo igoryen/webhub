@@ -18,3 +18,7 @@ img {
 #catlist li {
   font-family: "Verdana", sans-serif;
   font-size: small; }
+  #catlist li .desc {
+    color: gray;
+    margin-left: 0.5em;
+    font-style: italic; }
