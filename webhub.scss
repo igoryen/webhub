@@ -1,6 +1,7 @@
 body {
 	font-family: Verdana, sans-serif;
 	padding-left: 1em;
+    background-color: #17202a;
 }
 
 div {
@@ -16,8 +17,22 @@ div {
 img {
     width: 100%;
 }
+#tabs {
+    display: inline-block;
+    float: left;
+    background-color: #17202a;
+    width: 25%;
+    a {
+        text-decoration:none;
+        color:  #abb2b9 ;
+    }
+}
 
 #catlist {
+    width: 65%;
+    display: inline-block;
+    background-color:  #f8f9f9;
+    padding-left: 1%;
     h3 {
         color: gray;
     }
@@ -31,3 +46,40 @@ img {
         }
     }
 }
+
+// #bible {
+//     display: none;
+// }
+// #cool {
+//     display: none;
+// }
+// #entertainment {
+//     display: none;
+// }
+// #funny {
+//     display: none;
+// }
+// #health {
+//     display: none;
+// }
+// #jobhunt {
+//     display: none;
+// }
+// #language {
+//     display: none;
+// }
+// #mine {
+//     display: block;
+// }
+// #news {
+//     display: none;
+// }
+// #programming {
+//     display: none;
+// }
+// #social {
+//     display: none;
+// }
+// #styling {
+//     display: none;
+// }

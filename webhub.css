@@ -1,6 +1,7 @@
 body {
   font-family: Verdana, sans-serif;
-  padding-left: 1em; }
+  padding-left: 1em;
+  background-color: #17202a; }
 
 div {
   margin-top: 0.5em; }
@@ -13,12 +14,26 @@ div {
 img {
   width: 100%; }
 
-#catlist h3 {
-  color: gray; }
-#catlist li {
-  font-family: "Verdana", sans-serif;
-  font-size: small; }
-  #catlist li .desc {
-    color: gray;
-    margin-left: 0.5em;
-    font-style: italic; }
+#tabs {
+  display: inline-block;
+  float: left;
+  background-color: #17202a;
+  width: 25%; }
+  #tabs a {
+    text-decoration: none;
+    color: #abb2b9; }
+
+#catlist {
+  width: 65%;
+  display: inline-block;
+  background-color: #f8f9f9;
+  padding-left: 1%; }
+  #catlist h3 {
+    color: gray; }
+  #catlist li {
+    font-family: "Verdana", sans-serif;
+    font-size: small; }
+    #catlist li .desc {
+      color: gray;
+      margin-left: 0.5em;
+      font-style: italic; }
