@@ -16,3 +16,16 @@
 16. 'objects' is an array of link onjects
 17. 'id' is the id attribute of the tag
 18. an array of link objects added in a random systemless order
+19. save the source of the video in a temp variable
+20. Remove the source link of the video (by setting it to null), thus stopping the video
+21. Assign the video link back to the iframe, preparing it for the next play.
+22. create playbutton div
+23. create video div
+24. put the playbutton div inside the video div
+25. create the closer for the video
+26. create the content div
+27. put closer div into content div
+28. put the video div into the content div
+29. select all the divs that will wrap the embedded videos
+30. for each of the wrappers
+31. get the thumbnail image. sd = standard size 640x480 px

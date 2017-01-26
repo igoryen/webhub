@@ -1,0 +1,11 @@
+{
+    "project_path": "c:/aaa/ig/webhub",
+    "output_path": "c:/aaa/ig/webhub",
+    "options": {
+        "cache":         true,
+        "debug":         true,
+        "line-comments": true,
+        "line-numbers":  true,
+        "style":         "nested"
+    }
+}

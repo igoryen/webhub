@@ -32,7 +32,7 @@ img {
     width: 65%;
     display: inline-block;
     background-color:  #f8f9f9;
-    padding-left: 1%;
+    padding: 1em;
     h3 {
         color: gray;
     }
@@ -44,42 +44,158 @@ img {
             margin-left: 0.5em;
             font-style: italic;
         }
+        iframe {
+            display: block;
+        }
     }
 }
 
-// #bible {
-//     display: none;
-// }
-// #cool {
-//     display: none;
-// }
-// #entertainment {
-//     display: none;
-// }
-// #funny {
-//     display: none;
-// }
-// #health {
-//     display: none;
-// }
-// #jobhunt {
-//     display: none;
-// }
-// #language {
-//     display: none;
-// }
-// #mine {
-//     display: block;
-// }
-// #news {
-//     display: none;
-// }
-// #programming {
-//     display: none;
-// }
-// #social {
-//     display: none;
-// }
-// #styling {
-//     display: none;
-// }
+/************ YOUTUBE VIDEO a*/
+.youtube {
+    background-color: #000;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+
+
+
+    img {
+        width: 100%;
+        top: -16.84%;
+        left: 0;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    .play-button {
+        width: 90px;
+        height: 60px;
+        background-color: #333;
+        box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+        z-index: 1;
+        opacity: 0.8;
+        border-radius: 6px;
+        cursor: pointer;
+
+        &:before {
+            content: "";
+            border-style: solid;
+            border-width: 15px 0 15px 26.0px;
+            border-color: transparent transparent transparent #fff;
+        }
+    }
+
+    img, 
+    iframe, 
+    .play-button, 
+    .play-button:before {
+            position: absolute;
+    }
+
+    .play-button, 
+    .play-button:before {
+        top: 50%;
+        left: 50%;
+        transform: translate3d( -50%, -50%, 0 );
+    }
+
+    iframe {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+ 
+/************ YOUTUBE VIDEO z*/
+
+
+/*.yt_modal {*/
+#modal_Ur64xVRp5L0 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4);  /*Black w/ opacity*/ 
+}
+
+/* Modal Content */
+#content_Ur64xVRp5L0 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+span[id^=trigger] {
+    cursor: pointer;
+}
+/* The Close Button */
+/*.yt_close {*/
+#trigger_Ur64xVRp5L0 {
+    color: #aaaaaa;
+    /*float: right;*/
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#close_Ur64xVRp5L0 {
+    &:hover, &:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+
+
+/*.yt_close:hover,
+.yt_close:focus {
+    
+}*/
+
+
+/*#bible {
+    display: none;
+}
+#cool {
+    display: none;
+}
+#entertainment {
+    display: none;
+}
+#funny {
+    display: none;
+}
+#health {
+    display: none;
+}
+#jobhunt {
+    display: none;
+}
+#language {
+    display: none;
+}
+#mine {
+    display: block;
+}
+#news {
+    display: none;
+}
+#programming {
+    display: none;
+}
+#social {
+    display: none;
+}
+#styling {
+    display: none;
+}*/

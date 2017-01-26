@@ -1,10 +1,27 @@
 // 3
 var Filler = {
 
+    categs: {
+        bible: {name: "bible", links: []},
+        cool: {name: "cool", links: []},
+        entertainment: {name: "entertainment", links: []},
+        funny: {name: "funny", links: []},
+        health: {name: "health", links: []},
+        immigration: {name: "immigration", links: []},
+        jobhunt: {name: "jobhunt", links: []},
+        language: {name: "language", links: []},
+        mine: {name: "mine", links: []},
+        news: {name: "news", links: []},
+        politics: {name: "politics", links: []},
+        programming: {name: "programming", links: []},
+        russia: {name: "russia", links: []},
+        social: {name: "social", links: []},
+        styling: {name: "styling", links: []},
+    },
+
     dofill: function (ary) {
         for (var i = 0; i < ary.length; i++) {
-            type: "",
-            console.log(ary[i].name);
+            // console.log(ary[i].name);
         };
     },
 
@@ -28,11 +45,76 @@ var Filler = {
             return 1;
         return 0;
     },
+    createLink: function( arrayElement ) {
+        var anchor = document.createElement("a"); // 13
+        var span = document.createElement("span");
+        if(arrayElement.type == 'youtube') {
+            anchor.setAttribute("href", "https://www.youtube.com/watch?v=" + arrayElement.link );
+        } else {
+            anchor.setAttribute("href", arrayElement.link );
+        }
+        
+        anchor.setAttribute("target", "_blank" );
+        anchor.innerHTML = arrayElement.name;
+
+        span.setAttribute("class", "desc")
+        span.innerHTML = arrayElement.desc;
+
+        return { span: span, anchor: anchor};
+    },
+    createModal: function( arrayElement ) {
+        // 22
+        var playbtn = document.createElement("div");
+        playbtn.setAttribute("class", "play-button");
+
+        // 23
+        var video = document.createElement("div");
+        video.setAttribute("class", "youtube");
+        video.setAttribute("data-embed", arrayElement.link);
+        video.setAttribute("id", "video_"+arrayElement.link);
+
+        video.appendChild(playbtn); // 24
+
+        // 25
+        var closer = document.createElement("span");
+        closer.setAttribute("id", "close_" + arrayElement.link);
+        closer.innerHTML = "&times;";
+
+        // 26
+        var content = document.createElement("div");
+        content.setAttribute("id", "content_" + arrayElement.link);
+
+        content.appendChild(closer); // 27
+        content.appendChild(video); // 28
+        
+
+        var modal = document.createElement("div");
+        modal.setAttribute("id", "modal_" + arrayElement.link);
+
+        modal.appendChild(content);
+
+        return modal;
+    },
+    createTabs: function( ) {
+        var $nail = $("#tabs");
+        console.log(this.categs.length);
+        for (var i = 0; i < this.categs.length; i++) {
+            console.log(i);
+            var li = $("<li></li>");
+            console.log(li);
+            var anchor = $("<a/>");
+            anchor.attr("href", "#" + this.categs[i].name);
+            anchor.text(this.categs[i].name)
+            li.append(anchor);
+            $nail.append(li);
+        }
+    },
     // 4
     outputArrayOfObjects: function (aryOfLinks, id) {
 
         $list = document.getElementById('catlist'); // 5
         // console.log($list);
+        // console.log('id: ' + id);
         var div = document.createElement("div"); // 6
         div.setAttribute("id", id);
 
@@ -44,22 +126,25 @@ var Filler = {
         aryOfLinks.sort(this.compareNames); // 11
 
         for (var i = 0; i < aryOfLinks.length; i++) {
-
             var li = document.createElement("li"); // 12
-            var anchor = document.createElement("a"); // 13
-            var span = document.createElement("span");
+            // TO DO
+            // if (aryOfLinks[i].type == 'youtube') {
 
-            anchor.setAttribute("href", aryOfLinks[i].link );
-            anchor.setAttribute("target", "_blank" );
-            anchor.innerHTML = aryOfLinks[i].name;
+            //     var span = document.createElement("span");
+            //     span.setAttribute("id", "trigger_" + aryOfLinks[i].link );
+            //     span.innerHTML = aryOfLinks[i].name;
+            //     li.appendChild(span);
 
-            span.setAttribute("class", "desc")
-            span.innerHTML = aryOfLinks[i].desc;
+            //     // modal = this.createModal(aryOfLinks[i]);
 
-            li.appendChild(anchor);
-            li.appendChild(span);
+            //     // TO DO: fix this later
+            //     // li.appendChild(modal);
 
-            // li.innerHTML = " <i>" + aryOfLinks[i].desc + "</i>";
+            // } else {
+                var obj = this.createLink( aryOfLinks[i] );
+                li.appendChild(obj.anchor);
+                li.appendChild(obj.span);
+            // }
             ul.appendChild(li);
         };
         
@@ -72,31 +157,36 @@ var Filler = {
     createLists: function(objects) { // 16
 
         var start = document.getElementById('start'); // 14
-        console.log(objects.length);
+        // console.log(objects.length);
 
         objects.sort(this.compareCategories); // 15
 
         var categories = {
-            type: "",
             bible: {name: "bible", links: []},
             cool: {name: "cool", links: []},
             entertainment: {name: "entertainment", links: []},
             funny: {name: "funny", links: []},
             health: {name: "health", links: []},
+            immigration: {name: "immigration", links: []},
             jobhunt: {name: "jobhunt", links: []},
             language: {name: "language", links: []},
             mine: {name: "mine", links: []},
             news: {name: "news", links: []},
             politics: {name: "politics", links: []},
             programming: {name: "programming", links: []},
+            russia: {name: "russia", links: []},
             social: {name: "social", links: []},
             styling: {name: "styling", links: []},
         };
 
+        this.createTabs( categories );
+
         for (var i = 0; i < objects.length; i++) {
 
             switch (objects[i].cat) {
-            type: "",
+                case 'immigration':
+                    categories.immigration.links.push(objects[i]);
+                    break;
                 case 'funny':
                     categories.funny.links.push(objects[i]);
                     break;
@@ -136,45 +226,246 @@ var Filler = {
                 case 'politics':
                     categories.politics.links.push(objects[i]);
                     break;
+                case 'russia':
+                    categories.russia.links.push(objects[i]);
+                    break;
                 default:
                     break;
             }
         }
-        console.log(Object.keys(categories).length);
+        // console.log(Object.keys(categories).length);
 
         for( var c in categories) {
-            type: "",
             var category = categories[c];
             this.outputArrayOfObjects(category.links, category.name);
         }
     },
+
+    init: function() {
+
+        // this.createTabs();
+
+        var youtube = document.querySelectorAll( ".youtube" ); // 29
+
+        for (var i = 0; i < youtube.length; i++) { // 30
+            var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/mqdefault.jpg";  // 31
+            var image = new Image();
+            image.src = source;
+            image.addEventListener( "load", function() {
+                youtube[ i ].appendChild( image );
+            }( i ) );
+            youtube[i].addEventListener( "click", function() {
+ 
+                var iframe = document.createElement( "iframe" );
+         
+                    iframe.setAttribute( "frameborder", "0" );
+                    iframe.setAttribute( "allowfullscreen", "" );
+                    iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+         
+                    this.innerHTML = "";
+                    this.appendChild( iframe );
+            } );
+        }   
+        // ------------------------------------
+
+        var YTtrigger = document.getElementById('trigger_Ur64xVRp5L0');
+        // console.log(YTtrigger);
+        YTtrigger.onclick = function() {
+            // console.log("click on YT trigger!");
+            YTmodal.style.display = "block";
+            // YTtrigger.style.color = "red";
+        }
+
+        var YTmodal = document.getElementById("modal_Ur64xVRp5L0");
+
+
+
+        var TYclose = document.getElementById("close_Ur64xVRp5L0");
+
+
+        
+        TYclose.onclick = function() {
+            // console.log("click on YT close!");
+
+            YTmodal.style.display = "none";
+            // $("iframe_Ur64xVRp5L0").get(0).stopVideo();
+        }
+        window.onclick = function(event) {
+            // console.log("click on window!");
+            if(event.target == YTmodal) {
+                YTmodal.style.display = "none";
+                $('#video_Ur64xVRp5L0').find('video').stopVideo();
+                // var vid = $("#video_Ur64xVRp5L0").attr("src"); // 19
+                // $("#video_Ur64xVRp5L0").find('iframe').attr('src', ''); // 20
+                // $("#video_Ur64xVRp5L0").find('iframe').attr('src', vid); // 21
+
+            }
+        }
+
+    }
 
 };
 
 var f = Object.create(Filler);
 //f.dofill(links);
 
+
 window.onload = function() {
+
     // 18
     var links = [
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat: "",
+        //     desc: ""
+        // },
         {
             type: "",
+            name: "Lingorado",
+            link: "http://lingorado.com/ipa/",
+            cat: "language",
+            desc: "IPA converter"
+        },                
+        {
+            type: "",
+            name: "Seneca",
+            link: "https://my.senecacollege.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_16_1",
+            cat: "mine",
+            desc: "My Profile"
+        },
+        {
+            type: "",
+            name: "Merriam Webster",
+            link: "https://www.merriam-webster.com/",
+            cat: "language",
+            desc: "English Dictionary"
+        },            
+        {
+            type: "",
+            name: "Reaction Gifs",
+            link: "http://www.reactiongifs.com/",
+            cat: "social",
+            desc: "Say it with a GIF!"
+        },  
+        {
+            type: "",
+            name: "SolarMovie",
+            link: "http://solarmovie.sc/",
+            cat: "entertainment",
+            desc: "to watch movies"
+        },
+        {
+            type: "",
+            name: "EtherPad",
+            link: "https://public.etherpad-mozilla.org/",
+            cat: "programming",
+            desc: "Mozilla's"
+        },
+        {
+            type: "",
+            name: "Multitran",
+            link: "http://www.multitran.ru/c/M.exe?a=1",
+            cat: "language",
+            desc: "online dictionary"
+        },
+        {
+            type: "",
+            name: "Laravel",
+            link: "https://laravel.com/",
+            cat: "programming",
+            desc: "the main website"
+        },
+        {
+            type: "",
+            name: "Musicless",
+            link: "https://www.youtube.com/watch?v=_li_d_YviZ4&list=PLRW6BNC-pDizXP7TBRgParxL5FaBaa65B",
+            cat: "funny",
+            desc: "videos play-list"
+        },
+        
+        {
+            type: "",
+            name: "CanadaVisa",
+            link: "http://www.canadavisa.com/canada-immigration-discussion-board/index.php",
+            cat: "immigration",
+            desc: "forum"
+        },
+        {
+            type: "",
+            name: "CIC",
+            link: "http://www.cic.gc.ca/english/e-services/account.asp",
+            cat: "immigration",
+            desc: "My account"
+        },
+        {
+            type: "",
+            name: "Joy at Tumblr",
+            link: "http://jojacula.tumblr.com/",
+            cat: "cool",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Joy at Deviant Art",
+            link: "http://jojacula.deviantart.com/",
+            cat: "cool",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Maniac World",
+            link: "http://www.maniacworld.com/",
+            cat: "entertainment",
+            desc: "videos and gifs"
+        },
+        {
+            type: "",
+            name: "Omniglot",
+            link: "http://www.omniglot.com/index.htm",
+            cat: "language",
+            desc: "the online encyclopedia of writing systems and languages"
+        },
+        {
+            type: "",
+            name: "The Scots Language",
+            link: "https://www.youtube.com/watch?v=cENbkHS3mnY",
+            cat: "language",
+            desc: "by Dauvit Horsbroch"
+        },
+        {
+            type: "",
+            name: "Psalms in Scots",
+            link: "http://www.scotstext.org/makars/p_hately_waddell/pairt_1.asp#psalmi",
+            cat: "language",
+            desc: "By P Hately Waddell"
+        },
+        {
+            type: "youtube",
+            name: "Soviet Design",
+            link: "FOka3VsCjRk",
+            cat: "russia",
+            desc: "Tom Kirby tells"
+        },
+        {
+            type: "youtube",
             name: "Churkin vs Power",
-            link: "https://www.youtube.com/watch?v=WGXCzwNlzDw",
+            link: "WGXCzwNlzDw",
             cat: "politics",
             desc: "Russia, US clash at UNSC meeting, Syria envoy blames govt & opposition for escalation"
         },
         {
-            type: "",
+            type: "youtube",
             name: "Churkin on the US",
-            link: "https://www.youtube.com/watch?v=bID01gIEIOY",
+            link: "bID01gIEIOY",
             cat: "politics",
-            desc: " response on Obama actions in Syria"
+            desc: "response on Obama actions in Syria"
         },
         {
-            type: "",
+            type: "youtube",
             name: "Churkin on accusations",
-            link: "https://www.youtube.com/watch?v=Ur64xVRp5L0",
+            link: "Ur64xVRp5L0",
             cat: "politics",
             desc: "Churkin talks about accusations"
         },
@@ -282,13 +573,6 @@ window.onload = function() {
             link: "https://www.youtube.com/watch?v=S7r0VctD0C4&list=UUVPYbobPRzz0SjinWekjUBw",
             cat: "news",
             desc: "The famous blogger Anatolij Sharij"
-        },
-        {
-            type: "",
-            name: "Sia - The Greatest - Musicless",
-            link: "https://www.youtube.com/watch?v=-PHfG3Oi_TE",
-            cat: "funny",
-            desc: ""
         },
         {
             type: "",
@@ -622,6 +906,8 @@ window.onload = function() {
     ];
 
     f.renderName("heading", "WebHub");
-    console.log("Hi")
+    // console.log("Hi")
+    
     f.createLists(links);
+    f.init();
 }

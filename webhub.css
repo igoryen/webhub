@@ -1,39 +1,199 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\000031}}
 body {
   font-family: Verdana, sans-serif;
   padding-left: 1em;
   background-color: #17202a; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\000037}}
 div {
   margin-top: 0.5em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000311}}
 #heading {
   font-size: 2em;
   color: lightgray;
   font-weight: bolder; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000317}}
 img {
   width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000320}}
 #tabs {
   display: inline-block;
   float: left;
   background-color: #17202a;
   width: 25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000325}}
   #tabs a {
     text-decoration: none;
     color: #abb2b9; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000331}}
 #catlist {
   width: 65%;
   display: inline-block;
   background-color: #f8f9f9;
-  padding-left: 1%; }
+  padding: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000336}}
   #catlist h3 {
     color: gray; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000339}}
   #catlist li {
     font-family: "Verdana", sans-serif;
     font-size: small; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000342}}
     #catlist li .desc {
       color: gray;
       margin-left: 0.5em;
       font-style: italic; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000347}}
+    #catlist li iframe {
+      display: block; }
+
+/************ YOUTUBE VIDEO a*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000354}}
+.youtube {
+  background-color: #000;
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000364}}
+  .youtube img {
+    width: 100%;
+    top: -16.84%;
+    left: 0;
+    opacity: 0.7;
+    cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000372}}
+  .youtube .play-button {
+    width: 90px;
+    height: 60px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 6px;
+    cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000382}}
+    .youtube .play-button:before {
+      content: "";
+      border-style: solid;
+      border-width: 15px 0 15px 26.0px;
+      border-color: transparent transparent transparent #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000390}}
+  .youtube img,
+  .youtube iframe,
+  .youtube .play-button,
+  .youtube .play-button:before {
+    position: absolute; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000397}}
+  .youtube .play-button,
+  .youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003104}}
+  .youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; }
+
+/************ YOUTUBE VIDEO z*/
+/*.yt_modal {*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003116}}
+#modal_Ur64xVRp5L0 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /*Black w/ opacity*/ }
+
+/* Modal Content */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003131}}
+#content_Ur64xVRp5L0 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003138}}
+span[id^=trigger] {
+  cursor: pointer; }
+
+/* The Close Button */
+/*.yt_close {*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003143}}
+#trigger_Ur64xVRp5L0 {
+  color: #aaaaaa;
+  /*float: right;*/
+  font-size: 14px;
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003151}}
+#close_Ur64xVRp5L0:hover, #close_Ur64xVRp5L0:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
+/*.yt_close:hover,
+.yt_close:focus {
+    
+}*/
+/*#bible {
+    display: none;
+}
+#cool {
+    display: none;
+}
+#entertainment {
+    display: none;
+}
+#funny {
+    display: none;
+}
+#health {
+    display: none;
+}
+#jobhunt {
+    display: none;
+}
+#language {
+    display: none;
+}
+#mine {
+    display: block;
+}
+#news {
+    display: none;
+}
+#programming {
+    display: none;
+}
+#social {
+    display: none;
+}
+#styling {
+    display: none;
+}*/
+
+/*# sourceMappingURL=webhub.css.map */
