@@ -1,23 +1,23 @@
 // 3
 var Filler = {
 
-    categs: {
-        bible: {name: "bible", links: []},
-        cool: {name: "cool", links: []},
-        entertainment: {name: "entertainment", links: []},
-        funny: {name: "funny", links: []},
-        health: {name: "health", links: []},
-        immigration: {name: "immigration", links: []},
-        jobhunt: {name: "jobhunt", links: []},
-        language: {name: "language", links: []},
-        mine: {name: "mine", links: []},
-        news: {name: "news", links: []},
-        politics: {name: "politics", links: []},
-        programming: {name: "programming", links: []},
-        russia: {name: "russia", links: []},
-        social: {name: "social", links: []},
-        styling: {name: "styling", links: []},
-    },
+    // categs: {
+    //     bible: {name: "bible", links: []},
+    //     cool: {name: "cool", links: []},
+    //     entertainment: {name: "entertainment", links: []},
+    //     funny: {name: "funny", links: []},
+    //     health: {name: "health", links: []},
+    //     immigration: {name: "immigration", links: []},
+    //     jobhunt: {name: "jobhunt", links: []},
+    //     language: {name: "language", links: []},
+    //     mine: {name: "mine", links: []},
+    //     news: {name: "news", links: []},
+    //     politics: {name: "politics", links: []},
+    //     programming: {name: "programming", links: []},
+    //     russia: {name: "russia", links: []},
+    //     social: {name: "social", links: []},
+    //     styling: {name: "styling", links: []},
+    // },
 
     dofill: function (ary) {
         for (var i = 0; i < ary.length; i++) {
@@ -95,20 +95,20 @@ var Filler = {
 
         return modal;
     },
-    createTabs: function( ) {
-        var $nail = $("#tabs");
-        console.log(this.categs.length);
-        for (var i = 0; i < this.categs.length; i++) {
-            console.log(i);
-            var li = $("<li></li>");
-            console.log(li);
-            var anchor = $("<a/>");
-            anchor.attr("href", "#" + this.categs[i].name);
-            anchor.text(this.categs[i].name)
-            li.append(anchor);
-            $nail.append(li);
-        }
-    },
+    // createTabs: function( ) {
+    //     var $nail = $("#tabs");
+    //     console.log(this.categs.length);
+    //     for (var i = 0; i < this.categs.length; i++) {
+    //         console.log(i);
+    //         var li = $("<li></li>");
+    //         console.log(li);
+    //         var anchor = $("<a/>");
+    //         anchor.attr("href", "#" + this.categs[i].name);
+    //         anchor.text(this.categs[i].name)
+    //         li.append(anchor);
+    //         $nail.append(li);
+    //     }
+    // },
     // 4
     outputArrayOfObjects: function (aryOfLinks, id) {
 
@@ -177,13 +177,17 @@ var Filler = {
             russia: {name: "russia", links: []},
             social: {name: "social", links: []},
             styling: {name: "styling", links: []},
+            webdesign: {name: "webdesign", links: []},
         };
 
-        this.createTabs( categories );
+        // this.createTabs( categories );
 
         for (var i = 0; i < objects.length; i++) {
 
             switch (objects[i].cat) {
+                case 'webdesign':
+                    categories.webdesign.links.push(objects[i]);
+                    break;
                 case 'immigration':
                     categories.immigration.links.push(objects[i]);
                     break;
@@ -318,9 +322,88 @@ window.onload = function() {
         //     type: "",
         //     name: "",
         //     link: "",
-        //     cat: "",
+        //     cat:  "",
         //     desc: ""
         // },
+        
+        {
+            type: "",
+            name: "Wireframing Guide",
+            link: "https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399",
+            cat:  "webdesign",
+            desc: "for beginners"
+        },
+        {
+            type: "",
+            name: "4 key principles of web design",
+            link: "https://99designs.ca/blog/tips/web-design-basics-guide/",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Russophobia: top 50 myths",
+            link: "http://akarlin.com/2009/07/top-50-russophobe-myths/",
+            cat:  "russia",
+            desc: ""
+        },
+        
+        {
+            type: "",
+            name: "My Country & My People",
+            link: "https://www.blacklocks.ca/guest_commentary/my-country-my-people-2/",
+            cat:  "politics",
+            desc: "Chrystia Freeland's article"
+        },
+        {
+            type: "",
+            name: "Chrystia Freeland on Wikipedia",
+            link: "https://en.wikipedia.org/wiki/Chrystia_Freeland",
+            cat:  "politics",
+            desc: "Prime minister of Canada"
+        },
+        {
+            type: "",
+            name: "Dictionary of Russian Synonyms",
+            link: "http://jeck.ru/tools/SynonymsDictionary/",
+            cat:  "language",
+            desc: "more than 300K entries"
+        },
+        {
+            type: "",
+            name: "SlideShare",
+            link: "http://www.slideshare.net/",
+            cat:  "programming",
+            desc: "free slides"
+        },
+        {
+            type: "",
+            name: "Bootstrap Tutorial",
+            link: "file:///C:/aaa/ig/bootstraptut/bootstraptut.html",
+            cat:  "mine",
+            desc: "examples of using"
+        },
+        {
+            type: "",
+            name: "Pixabay",
+            link: "https://pixabay.com/",
+            cat: "programming",
+            desc: "Free images and videos "
+        },
+        {
+            type: "",
+            name: "Lipsum",
+            link: "http://www.lipsum.com/",
+            cat: "programming",
+            desc: "dummy texts & banners"
+        },
+        {
+            type: "",
+            name: "XML Validator",
+            link: "http://www.xmlvalidation.com/",
+            cat: "programming",
+            desc: "validate the formatting in an xml file"
+        },
         {
             type: "",
             name: "Lingorado",
