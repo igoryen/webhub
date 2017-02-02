@@ -5,54 +5,62 @@ body {
   background-color: #17202a; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\000037}}
-div {
+.container {
   margin-top: 0.5em; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000311}}
 #heading {
   font-size: 2em;
   color: lightgray;
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin-bottom: 2%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000318}}
 img {
   width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000321}}
 #tabs {
   display: inline-block;
+  padding-right: 4%;
   float: left;
   background-color: #17202a;
   width: 25%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000327}}
   #tabs a {
     text-decoration: none;
-    color: #abb2b9; }
+    color: #abb2b9;
+    padding-top: 3px;
+    padding-bottom: 3px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000332}}
+    #tabs a:hover {
+      color: #337ab7; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000338}}
 #catlist {
-  width: 65%;
+  height: 100%;
+  width: 73%;
   display: inline-block;
   background-color: #f8f9f9;
   padding: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000344}}
   #catlist h3 {
     color: gray; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000347}}
   #catlist li {
     font-family: "Verdana", sans-serif;
     font-size: small; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000350}}
     #catlist li .desc {
       color: gray;
       margin-left: 0.5em;
       font-style: italic; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000355}}
     #catlist li iframe {
       display: block; }
 
 /************ YOUTUBE VIDEO a*/
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000362}}
 .youtube {
   background-color: #000;
   margin-bottom: 30px;
@@ -60,14 +68,14 @@ img {
   padding-top: 56.25%;
   overflow: hidden;
   cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000372}}
   .youtube img {
     width: 100%;
     top: -16.84%;
     left: 0;
     opacity: 0.7;
     cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000380}}
   .youtube .play-button {
     width: 90px;
     height: 60px;
@@ -77,25 +85,25 @@ img {
     opacity: 0.8;
     border-radius: 6px;
     cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000390}}
     .youtube .play-button:before {
       content: "";
       border-style: solid;
       border-width: 15px 0 15px 26.0px;
       border-color: transparent transparent transparent #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000398}}
   .youtube img,
   .youtube iframe,
   .youtube .play-button,
   .youtube .play-button:before {
     position: absolute; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003105}}
   .youtube .play-button,
   .youtube .play-button:before {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003112}}
   .youtube iframe {
     height: 100%;
     width: 100%;
@@ -104,7 +112,7 @@ img {
 
 /************ YOUTUBE VIDEO z*/
 /*.yt_modal {*/
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003124}}
 #modal_Ur64xVRp5L0 {
   display: none;
   /* Hidden by default */
@@ -128,7 +136,7 @@ img {
   /*Black w/ opacity*/ }
 
 /* Modal Content */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003139}}
 #content_Ur64xVRp5L0 {
   background-color: #fefefe;
   margin: auto;
@@ -136,20 +144,20 @@ img {
   border: 1px solid #888;
   width: 80%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003146}}
 span[id^=trigger] {
   cursor: pointer; }
 
 /* The Close Button */
 /*.yt_close {*/
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003151}}
 #trigger_Ur64xVRp5L0 {
   color: #aaaaaa;
   /*float: right;*/
   font-size: 14px;
   font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003159}}
 #close_Ur64xVRp5L0:hover, #close_Ur64xVRp5L0:focus {
   color: #000;
   text-decoration: none;

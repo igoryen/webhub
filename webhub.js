@@ -110,13 +110,19 @@ var Filler = {
     //     }
     // },
     // 4
-    outputArrayOfObjects: function (aryOfLinks, id) {
+    outputArrayOfObjects: function (aryOfLinks, id, isFirst) {
 
         $list = document.getElementById('catlist'); // 5
         // console.log($list);
         // console.log('id: ' + id);
         var div = document.createElement("div"); // 6
         div.setAttribute("id", id);
+        if( isFirst == true) {
+            div.setAttribute("class", "tab-pane fade in active");
+        } else {
+            div.setAttribute("class", "tab-pane fade");
+        }
+        
 
         var h3 = document.createElement("h3"); // 7
         h3.innerHTML = id.charAt(0).toUpperCase() + id.slice(1) + " (" + aryOfLinks.length +")"; // 8
@@ -237,11 +243,16 @@ var Filler = {
                     break;
             }
         }
-        // console.log(Object.keys(categories).length);
-
+        console.log(Object.keys(categories).length);
+        var counter = 0;
         for( var c in categories) {
             var category = categories[c];
-            this.outputArrayOfObjects(category.links, category.name);
+            if(counter == 0) {
+               this.outputArrayOfObjects(category.links, category.name, true); 
+            } else {
+                this.outputArrayOfObjects(category.links, category.name, false);
+            }
+            counter++;
         }
     },
 
@@ -272,39 +283,39 @@ var Filler = {
         }   
         // ------------------------------------
 
-        var YTtrigger = document.getElementById('trigger_Ur64xVRp5L0');
-        // console.log(YTtrigger);
-        YTtrigger.onclick = function() {
-            // console.log("click on YT trigger!");
-            YTmodal.style.display = "block";
-            // YTtrigger.style.color = "red";
-        }
+        // var YTtrigger = document.getElementById('trigger_Ur64xVRp5L0');
+        // // console.log(YTtrigger);
+        // YTtrigger.onclick = function() {
+        //     // console.log("click on YT trigger!");
+        //     YTmodal.style.display = "block";
+        //     // YTtrigger.style.color = "red";
+        // }
 
-        var YTmodal = document.getElementById("modal_Ur64xVRp5L0");
+        // var YTmodal = document.getElementById("modal_Ur64xVRp5L0");
 
 
 
-        var TYclose = document.getElementById("close_Ur64xVRp5L0");
+        // var TYclose = document.getElementById("close_Ur64xVRp5L0");
 
 
         
-        TYclose.onclick = function() {
-            // console.log("click on YT close!");
+        // TYclose.onclick = function() {
+        //     // console.log("click on YT close!");
 
-            YTmodal.style.display = "none";
-            // $("iframe_Ur64xVRp5L0").get(0).stopVideo();
-        }
-        window.onclick = function(event) {
-            // console.log("click on window!");
-            if(event.target == YTmodal) {
-                YTmodal.style.display = "none";
-                $('#video_Ur64xVRp5L0').find('video').stopVideo();
-                // var vid = $("#video_Ur64xVRp5L0").attr("src"); // 19
-                // $("#video_Ur64xVRp5L0").find('iframe').attr('src', ''); // 20
-                // $("#video_Ur64xVRp5L0").find('iframe').attr('src', vid); // 21
+        //     YTmodal.style.display = "none";
+        //     // $("iframe_Ur64xVRp5L0").get(0).stopVideo();
+        // }
+        // window.onclick = function(event) {
+        //     // console.log("click on window!");
+        //     if(event.target == YTmodal) {
+        //         YTmodal.style.display = "none";
+        //         $('#video_Ur64xVRp5L0').find('video').stopVideo();
+        //         // var vid = $("#video_Ur64xVRp5L0").attr("src"); // 19
+        //         // $("#video_Ur64xVRp5L0").find('iframe').attr('src', ''); // 20
+        //         // $("#video_Ur64xVRp5L0").find('iframe').attr('src', vid); // 21
 
-            }
-        }
+        //     }
+        // }
 
     }
 

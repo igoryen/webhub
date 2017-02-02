@@ -1,36 +1,39 @@
 <html>
-	<head>
-		<meta charset="UTF-8"> 
-		<title>:: WebHub</title>
-		<link rel="stylesheet" type="text/css" href="webhub.css">
-		<script
-			  src="https://code.jquery.com/jquery-3.1.1.min.js"
-			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-			  crossorigin="anonymous"></script>
-		<script type="text/javascript" src="webhub.js"></script>
-	</head>
-	<body>
-		<div id="heading">[the heading]</div>
-		<ul id="tabs">
-            <li><a href="#bible">bible</a></li>
-            <li><a href="#cool">cool</a></li>
-            <li><a href="#entertainment">entertainment</a></li>
-            <li><a href="#funny">funny</a></li>
-            <li><a href="#health">health</a></li>
-            <li><a href="#jobhunt">jobhunt</a></li>
-            <li><a href="#language">language</a></li>
-            <li><a href="#mine">mine</a></li>
-            <li><a href="#news">news</a></li>
-            <li><a href="#programming">programming</a></li>
-            <li><a href="#social">social</a></li>
-            <li><a href="#styling">styling</a></li>
-            <li><a href="#webdesign">web-design</a></li>
-        </ul>
-		<div id="catlist"></div>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>:: WebHub</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="webhub.css">
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="webhub.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="heading">[the heading]</div>
+            <ul id="tabs" class="nav nav-pills nav-stacked">
+                <li class="active"><a data-toggle="tab" href="#bible">bible</a></li>
+                <li><a data-toggle="tab" href="#cool">cool</a></li>
+                <li><a data-toggle="tab" href="#entertainment">entertainment</a></li>
+                <li><a data-toggle="tab" href="#funny">funny</a></li>
+                <li><a data-toggle="tab" href="#health">health</a></li>
+                <li><a data-toggle="tab" href="#jobhunt">jobhunt</a></li>
+                <li><a data-toggle="tab" href="#language">language</a></li>
+                <li><a data-toggle="tab" href="#mine">mine</a></li>
+                <li><a data-toggle="tab" href="#news">news</a></li>
+                <li><a data-toggle="tab" href="#programming">programming</a></li>
+                <li><a data-toggle="tab" href="#social">social</a></li>
+                <li><a data-toggle="tab" href="#styling">styling</a></li>
+                <li><a data-toggle="tab" href="#webdesign">web-design</a></li>
+            </ul>
+            <div class="tab-content" id="catlist"></div>
 
-		<div>
-			<img src="http://img06.deviantart.net/e248/i/2016/107/1/5/t_34_85_on_the_streets_of_berlin__1945_by_klimbims-d9zbhoy.jpg"/>
-		</div>
-
-	</body>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>

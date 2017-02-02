@@ -4,7 +4,7 @@ body {
     background-color: #17202a;
 }
 
-div {
+.container {
 	margin-top: 0.5em;
 }
 
@@ -12,6 +12,7 @@ div {
 	font-size: 2em;
 	color: lightgray;
 	font-weight: bolder;
+    margin-bottom: 2%;
 }
 
 img {
@@ -19,17 +20,24 @@ img {
 }
 #tabs {
     display: inline-block;
+    padding-right: 4%;
     float: left;
     background-color: #17202a;
     width: 25%;
     a {
         text-decoration:none;
         color:  #abb2b9 ;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        &:hover {
+            color: #337ab7;
+        }
     }
 }
 
 #catlist {
-    width: 65%;
+    height: 100%;
+    width: 73%;
     display: inline-block;
     background-color:  #f8f9f9;
     padding: 1em;
