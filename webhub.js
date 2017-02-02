@@ -182,7 +182,6 @@ var Filler = {
             programming: {name: "programming", links: []},
             russia: {name: "russia", links: []},
             social: {name: "social", links: []},
-            styling: {name: "styling", links: []},
             webdesign: {name: "webdesign", links: []},
         };
 
@@ -220,9 +219,6 @@ var Filler = {
                     break;
                 case 'cool':
                     categories.cool.links.push(objects[i]);
-                    break;
-                case 'styling':
-                    categories.styling.links.push(objects[i]);
                     break;
                 case 'mine':
                     categories.mine.links.push(objects[i]);
@@ -992,7 +988,7 @@ window.onload = function() {
         },
         {
             type: "",
-            cat: "styling",
+            cat: "webdesign",
             name: "HTML Color Codes",
             link: "http://htmlcolorcodes.com/",
             desc: ""
