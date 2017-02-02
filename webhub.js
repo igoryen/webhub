@@ -335,6 +335,28 @@ window.onload = function() {
         
         {
             type: "",
+            name: "20 steps to better wireframing",
+            link: "http://blog.teamtreehouse.com/20-steps-to-better-wireframing",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "How to create First Wireframe",
+            link: "http://blog.careerfoundry.com/ux-design/how-to-create-your-first-wireframe",
+            cat:  "webdesign",
+            desc: ""
+        },
+        
+        {
+            type: "",
+            name: "Learning to wireframe",
+            link: "http://www.dtelepathy.com/blog/design/learning-to-wireframe-10-best-practices",
+            cat:  "webdesign",
+            desc: "10 best practices"
+        },
+        {
+            type: "",
             name: "Wireframing Guide",
             link: "https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399",
             cat:  "webdesign",
