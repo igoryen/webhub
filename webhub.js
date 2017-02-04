@@ -1,6 +1,5 @@
 // 3
 var Filler = {
-
     // categs: {
     //     bible: {name: "bible", links: []},
     //     cool: {name: "cool", links: []},
@@ -22,47 +21,46 @@ var Filler = {
     dofill: function (ary) {
         for (var i = 0; i < ary.length; i++) {
             // console.log(ary[i].name);
-        };
+        }
     },
-
     renderName: function (id, string) { // 17
         var id = document.getElementById(id);
         id.innerHTML = string;
     },
     // 2
-    compareCategories: function(a,b) {
+    compareCategories: function (a, b) {
         if (a.cat < b.cat)
             return -1;
-          if (a.cat > b.cat)
+        if (a.cat > b.cat)
             return 1;
         return 0;
     },
     // 1
-    compareNames: function(a,b) {
+    compareNames: function (a, b) {
         if (a.name.toLowerCase() < b.name.toLowerCase())
             return -1;
-          if (a.name.toLowerCase() > b.name.toLowerCase())
+        if (a.name.toLowerCase() > b.name.toLowerCase())
             return 1;
         return 0;
     },
-    createLink: function( arrayElement ) {
+    createLink: function (arrayElement) {
         var anchor = document.createElement("a"); // 13
         var span = document.createElement("span");
-        if(arrayElement.type == 'youtube') {
-            anchor.setAttribute("href", "https://www.youtube.com/watch?v=" + arrayElement.link );
+        if (arrayElement.type == 'youtube') {
+            anchor.setAttribute("href", "https://www.youtube.com/watch?v=" + arrayElement.link);
         } else {
-            anchor.setAttribute("href", arrayElement.link );
+            anchor.setAttribute("href", arrayElement.link);
         }
-        
-        anchor.setAttribute("target", "_blank" );
+
+        anchor.setAttribute("target", "_blank");
         anchor.innerHTML = arrayElement.name;
 
         span.setAttribute("class", "desc")
         span.innerHTML = arrayElement.desc;
 
-        return { span: span, anchor: anchor};
+        return {span: span, anchor: anchor};
     },
-    createModal: function( arrayElement ) {
+    createModal: function (arrayElement) {
         // 22
         var playbtn = document.createElement("div");
         playbtn.setAttribute("class", "play-button");
@@ -71,7 +69,7 @@ var Filler = {
         var video = document.createElement("div");
         video.setAttribute("class", "youtube");
         video.setAttribute("data-embed", arrayElement.link);
-        video.setAttribute("id", "video_"+arrayElement.link);
+        video.setAttribute("id", "video_" + arrayElement.link);
 
         video.appendChild(playbtn); // 24
 
@@ -86,7 +84,7 @@ var Filler = {
 
         content.appendChild(closer); // 27
         content.appendChild(video); // 28
-        
+
 
         var modal = document.createElement("div");
         modal.setAttribute("id", "modal_" + arrayElement.link);
@@ -117,22 +115,22 @@ var Filler = {
         // console.log('id: ' + id);
         var div = document.createElement("div"); // 6
         div.setAttribute("id", id);
-        if( isFirst == true) {
+        if (isFirst == true) {
             div.setAttribute("class", "tab-pane fade in active");
         } else {
             div.setAttribute("class", "tab-pane fade");
         }
-        
+
 
         var h3 = document.createElement("h3"); // 7
         //h3.innerHTML = id.charAt(0).toUpperCase() + id.slice(1) + " (" + aryOfLinks.length +")"; // 8
         h3.innerHTML = id.charAt(0).toUpperCase() + id.slice(1); // 8
-        var tab = "tab-"+id;
-        console.log(tab + " (" + aryOfLinks.length +")");
-        document.getElementById(tab).innerHTML = " (" + aryOfLinks.length +")"; // 8
+        var tab = "tab-" + id;
+        console.log(tab + " (" + aryOfLinks.length + ")");
+        document.getElementById(tab).innerHTML = " (" + aryOfLinks.length + ")"; // 8
 
         var ul = document.createElement("ul"); // 9
-        
+
         aryOfLinks.sort(this.compareNames); // 11
 
         for (var i = 0; i < aryOfLinks.length; i++) {
@@ -151,20 +149,20 @@ var Filler = {
             //     // li.appendChild(modal);
 
             // } else {
-                var obj = this.createLink( aryOfLinks[i] );
-                li.appendChild(obj.anchor);
-                li.appendChild(obj.span);
+            var obj = this.createLink(aryOfLinks[i]);
+            li.appendChild(obj.anchor);
+            li.appendChild(obj.span);
             // }
             ul.appendChild(li);
-        };
-        
+        }
+        ;
+
         div.appendChild(h3);
         div.appendChild(ul);
 
         $list.appendChild(div);
     },
-
-    createLists: function(objects) { // 16
+    createLists: function (objects) { // 16
 
         var start = document.getElementById('start'); // 14
         // console.log(objects.length);
@@ -245,11 +243,11 @@ var Filler = {
         }
         console.log(Object.keys(categories).length);
         var counter = 0;
-        for( var c in categories) {
+        for (var c in categories) {
             var category = categories[c];
-            if(counter == 0) {
-               this.outputArrayOfObjects(category.links, category.name, true); 
-               var tab = "#tab-"+category.id;
+            if (counter == 0) {
+                this.outputArrayOfObjects(category.links, category.name, true);
+                var tab = "#tab-" + category.id;
                 console.log(tab);
                 //document.getElementById(tab).innerHTML = " (" + aryOfLinks.length +")"; // 8
             } else {
@@ -258,32 +256,31 @@ var Filler = {
             counter++;
         }
     },
-
-    init: function() {
+    init: function () {
 
         // this.createTabs();
 
-        var youtube = document.querySelectorAll( ".youtube" ); // 29
+        var youtube = document.querySelectorAll(".youtube"); // 29
 
         for (var i = 0; i < youtube.length; i++) { // 30
-            var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/mqdefault.jpg";  // 31
+            var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/mqdefault.jpg";  // 31
             var image = new Image();
             image.src = source;
-            image.addEventListener( "load", function() {
-                youtube[ i ].appendChild( image );
-            }( i ) );
-            youtube[i].addEventListener( "click", function() {
- 
-                var iframe = document.createElement( "iframe" );
-         
-                    iframe.setAttribute( "frameborder", "0" );
-                    iframe.setAttribute( "allowfullscreen", "" );
-                    iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
-         
-                    this.innerHTML = "";
-                    this.appendChild( iframe );
-            } );
-        }   
+            image.addEventListener("load", function () {
+                youtube[ i ].appendChild(image);
+            }(i));
+            youtube[i].addEventListener("click", function () {
+
+                var iframe = document.createElement("iframe");
+
+                iframe.setAttribute("frameborder", "0");
+                iframe.setAttribute("allowfullscreen", "");
+                iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+
+                this.innerHTML = "";
+                this.appendChild(iframe);
+            });
+        }
         // ------------------------------------
 
         // var YTtrigger = document.getElementById('trigger_Ur64xVRp5L0');
@@ -301,7 +298,7 @@ var Filler = {
         // var TYclose = document.getElementById("close_Ur64xVRp5L0");
 
 
-        
+
         // TYclose.onclick = function() {
         //     // console.log("click on YT close!");
 
@@ -328,7 +325,7 @@ var f = Object.create(Filler);
 //f.dofill(links);
 
 
-window.onload = function() {
+window.onload = function () {
 
     // 18
     var links = [
@@ -339,112 +336,110 @@ window.onload = function() {
         //     cat:  "",
         //     desc: ""
         // },
-        
+
         {
             type: "",
             name: "Chinese Dictionary MDBG",
             link: "https://www.mdbg.net/chindict/chindict.php",
-            cat:  "language",
+            cat: "language",
             desc: ""
         },
         {
             type: "",
             name: "11 Tips to Improve Your Diet and Make Your Abs Pop",
             link: "http://www.mensfitness.com/weight-loss/burn-fat-fast/11-ways-eat-make-your-abs-pop",
-            cat:  "health",
+            cat: "health",
             desc: "from Men's Fitness"
         },
         {
             type: "",
             name: "Misconceptions about Russia",
             link: "https://www.quora.com/What-are-the-biggest-misconceptions-about-Russia",
-            cat:  "russia",
+            cat: "russia",
             desc: "the biggest ones"
         },
         {
             type: "",
             name: "Foboko",
             link: "https://www.foboko.com/sentence-dictionary/",
-            cat:  "language",
+            cat: "language",
             desc: "Dictionary for writers (e.g. example sentences)"
         },
         {
             type: "",
             name: "20 steps to better wireframing",
             link: "http://blog.teamtreehouse.com/20-steps-to-better-wireframing",
-            cat:  "webdesign",
+            cat: "webdesign",
             desc: ""
         },
         {
             type: "",
             name: "How to create First Wireframe",
             link: "http://blog.careerfoundry.com/ux-design/how-to-create-your-first-wireframe",
-            cat:  "webdesign",
+            cat: "webdesign",
             desc: ""
         },
-        
         {
             type: "",
             name: "Learning to wireframe",
             link: "http://www.dtelepathy.com/blog/design/learning-to-wireframe-10-best-practices",
-            cat:  "webdesign",
+            cat: "webdesign",
             desc: "10 best practices"
         },
         {
             type: "",
             name: "Wireframing Guide",
             link: "https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399",
-            cat:  "webdesign",
+            cat: "webdesign",
             desc: "for beginners"
         },
         {
             type: "",
             name: "4 key principles of web design",
             link: "https://99designs.ca/blog/tips/web-design-basics-guide/",
-            cat:  "webdesign",
+            cat: "webdesign",
             desc: ""
         },
         {
             type: "",
             name: "Russophobia: top 50 myths",
             link: "http://akarlin.com/2009/07/top-50-russophobe-myths/",
-            cat:  "russia",
+            cat: "russia",
             desc: ""
         },
-        
         {
             type: "",
             name: "My Country & My People",
             link: "https://www.blacklocks.ca/guest_commentary/my-country-my-people-2/",
-            cat:  "politics",
+            cat: "politics",
             desc: "Chrystia Freeland's article"
         },
         {
             type: "",
             name: "Chrystia Freeland on Wikipedia",
             link: "https://en.wikipedia.org/wiki/Chrystia_Freeland",
-            cat:  "politics",
+            cat: "politics",
             desc: "Prime minister of Canada"
         },
         {
             type: "",
             name: "Dictionary of Russian Synonyms",
             link: "http://jeck.ru/tools/SynonymsDictionary/",
-            cat:  "language",
+            cat: "language",
             desc: "more than 300K entries"
         },
         {
             type: "",
             name: "SlideShare",
             link: "http://www.slideshare.net/",
-            cat:  "programming",
+            cat: "programming",
             desc: "free slides"
         },
         {
             type: "",
             name: "Bootstrap Tutorial",
             link: "file:///C:/aaa/ig/bootstraptut/bootstraptut.html",
-            cat:  "mine",
+            cat: "mine",
             desc: "examples of using"
         },
         {
@@ -474,7 +469,7 @@ window.onload = function() {
             link: "http://lingorado.com/ipa/",
             cat: "language",
             desc: "IPA converter"
-        },                
+        },
         {
             type: "",
             name: "Seneca",
@@ -488,14 +483,14 @@ window.onload = function() {
             link: "https://www.merriam-webster.com/",
             cat: "language",
             desc: "English Dictionary"
-        },            
+        },
         {
             type: "",
             name: "Reaction Gifs",
             link: "http://www.reactiongifs.com/",
             cat: "social",
             desc: "Say it with a GIF!"
-        },  
+        },
         {
             type: "",
             name: "SolarMovie",
@@ -531,7 +526,6 @@ window.onload = function() {
             cat: "funny",
             desc: "videos play-list"
         },
-        
         {
             type: "",
             name: "CanadaVisa",
@@ -642,7 +636,7 @@ window.onload = function() {
             name: "Biribi",
             link: "file:///C:/aaa/ig/biribi/index.html",
             cat: "mine",
-            desc: "several JS files working together"    
+            desc: "several JS files working together"
         },
         {
             type: "",
@@ -692,7 +686,7 @@ window.onload = function() {
             link: "https://www.heroku.com/home",
             cat: "programming",
             desc: ""
-       },
+        },
         {
             type: "",
             name: "Monster",
@@ -756,7 +750,7 @@ window.onload = function() {
             cat: "health",
             desc: ""
         },
-        {   
+        {
             type: "",
             name: "CCS",
             link: "http://site13/",
@@ -877,7 +871,7 @@ window.onload = function() {
         },
         {
             type: "",
-            name: "Russian Freq Dict.", 
+            name: "Russian Freq Dict.",
             link: "http://dict.ruslang.ru/freq.php?act=show&dic=freq_spoken&title=%D7%E0%F1%F2%EE%F2%ED%FB%E9%20%F1%EB%EE%E2%E0%F0%FC%20%E6%E8%E2%EE%E9%20%F3%F1%F2%ED%EE%E9%20%F0%E5%F7%E8",
             cat: "language",
             desc: ""
@@ -885,77 +879,77 @@ window.onload = function() {
         {
             type: "",
             cat: "language",
-            name: "Interslavic", 
+            name: "Interslavic",
             link: "http://steen.free.fr/interslavic/index.html",
             desc: ""
         },
         {
             type: "",
             cat: "language",
-            name: "Interslavic Lexicon", 
+            name: "Interslavic Lexicon",
             link: "http://dict.interslavic.com/index.jsp",
             desc: ""
         },
         {
             type: "",
             cat: "language",
-            name: "Izvestija.info", 
+            name: "Izvestija.info",
             link: "http://izviestija.info/",
             desc: ""
         },
         {
             type: "",
             cat: "programming",
-            name: "React vs Angular 2", 
+            name: "React vs Angular 2",
             link: "https://www.codementor.io/codementorteam/tutorials/react-vs-angular-2-comparison-beginners-guide-lvz5710ha?utm_source=sendgrid&utm_medium=email&utm_term=react-vs-angular2&utm_content=tutorial&utm_campaign=newsletter20161130",
             desc: ""
         },
         {
             type: "",
             cat: "programming",
-            name: "JavaScript Fatigue", 
+            name: "JavaScript Fatigue",
             link: "https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.saiwxmdj4",
             desc: ""
         },
         {
             type: "",
             cat: "programming",
-            name: "jQuery vs Vanilla", 
+            name: "jQuery vs Vanilla",
             link: "https://www.sitepoint.com/jquery-vs-raw-javascript-1-dom-forms/",
             desc: ""
         },
         {
             type: "",
             cat: "programming",
-            name: "This just isn't functional", 
+            name: "This just isn't functional",
             link: "https://codewords.recurse.com/issues/six/this-just-isnt-functional",
             desc: ""
         },
         {
             type: "",
             cat: "programming",
-            name: "Six Simple Mind Tricks to Help You Learn JavaScript Faster", 
+            name: "Six Simple Mind Tricks to Help You Learn JavaScript Faster",
             link: "https://www.sitepoint.com/mind-tricks-to-learn-javascript-faster/",
             desc: ""
         },
         {
             type: "",
             cat: "programming",
-            name: "SOAP vs REST", 
+            name: "SOAP vs REST",
             link: "http://hamidarebai.blogspot.ca/2016/09/difference-between-soap-and-rest-web.html",
             desc: ""
         },
         {
             type: "",
             cat: "language",
-            name: "Interslavic Dictionary (Dynamic)", 
+            name: "Interslavic Dictionary (Dynamic)",
             link: "http://steen.free.fr/interslavic/dynamic_dictionary.html",
             desc: ""
         },
         {
             type: "",
             cat: "language",
-            name: "NeoSlavonic Language (Google Doc)", 
+            name: "NeoSlavonic Language (Google Doc)",
             link: "https://drive.google.com/drive/folders/0B5dkyWO6wMH2ZHhhRUZaMllneFU",
             desc: ""
         },
@@ -1055,7 +1049,7 @@ window.onload = function() {
     $(document).ready()
     f.renderName("heading", "WebHub");
     // console.log("Hi")
-    
+
     f.createLists(links);
     f.init();
 }
