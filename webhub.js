@@ -125,7 +125,11 @@ var Filler = {
         
 
         var h3 = document.createElement("h3"); // 7
-        h3.innerHTML = id.charAt(0).toUpperCase() + id.slice(1) + " (" + aryOfLinks.length +")"; // 8
+        //h3.innerHTML = id.charAt(0).toUpperCase() + id.slice(1) + " (" + aryOfLinks.length +")"; // 8
+        h3.innerHTML = id.charAt(0).toUpperCase() + id.slice(1); // 8
+        var tab = "tab-"+id;
+        console.log(tab + " (" + aryOfLinks.length +")");
+        document.getElementById(tab).innerHTML = " (" + aryOfLinks.length +")"; // 8
 
         var ul = document.createElement("ul"); // 9
         
@@ -245,6 +249,9 @@ var Filler = {
             var category = categories[c];
             if(counter == 0) {
                this.outputArrayOfObjects(category.links, category.name, true); 
+               var tab = "#tab-"+category.id;
+                console.log(tab);
+                //document.getElementById(tab).innerHTML = " (" + aryOfLinks.length +")"; // 8
             } else {
                 this.outputArrayOfObjects(category.links, category.name, false);
             }
@@ -333,6 +340,34 @@ window.onload = function() {
         //     desc: ""
         // },
         
+        {
+            type: "",
+            name: "Chinese Dictionary MDBG",
+            link: "https://www.mdbg.net/chindict/chindict.php",
+            cat:  "language",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "11 Tips to Improve Your Diet and Make Your Abs Pop",
+            link: "http://www.mensfitness.com/weight-loss/burn-fat-fast/11-ways-eat-make-your-abs-pop",
+            cat:  "health",
+            desc: "from Men's Fitness"
+        },
+        {
+            type: "",
+            name: "Misconceptions about Russia",
+            link: "https://www.quora.com/What-are-the-biggest-misconceptions-about-Russia",
+            cat:  "russia",
+            desc: "the biggest ones"
+        },
+        {
+            type: "",
+            name: "Foboko",
+            link: "https://www.foboko.com/sentence-dictionary/",
+            cat:  "language",
+            desc: "Dictionary for writers (e.g. example sentences)"
+        },
         {
             type: "",
             name: "20 steps to better wireframing",
@@ -1017,6 +1052,7 @@ window.onload = function() {
         }
     ];
 
+    $(document).ready()
     f.renderName("heading", "WebHub");
     // console.log("Hi")
     
