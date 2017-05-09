@@ -409,8 +409,21 @@ window.onload = function () {
             link: "http://www.cssmatic.com/",
             cat:  "webdesign",
             desc: "CSS tools: gradient generator etc."
+        },        
+        {
+            type: "",
+            name: "Bible Hub",
+            link: "http://biblehub.com/",
+            cat:  "bible",
+            desc: "Online Bible Study Suite"
         },
-
+        {
+            type: "",
+            name: "HTML5 Doctor",
+            link: "http://html5doctor.com/",
+            cat:  "webdesign",
+            desc: "new HTML tags"
+        },
         {
             type: "",
             name: "Assai",
@@ -518,7 +531,169 @@ window.onload = function () {
             cat:  "javascript",
             desc: "widget for jQuery mobile"
         },
+        {
+            name: "Perseus Digital Library",
+            link: "http://www.perseus.tufts.edu/hopper/definitionlookup",
+            cat:  "language",
+            desc: "Greek-English dictionary"
+        },
+        {
+            type: "",
+            name: "Glosbe",
+            link: "https://glosbe.com/en/la",
+            cat:  "language",
+            desc: "English Latin dictionary"
+        },
+        {
+            type: "",
+            name: "Bugzilla",
+            link: "https://bugzilla.mozilla.org/",
+            cat:  "programming",
+            desc: "Mozilla's bug tracker"
+        },
+        {
+            type: "",
+            name: "TickerFactory",
+            link: "https://tickerfactory.com/ezticker/ticker_designer.php",
+            cat:  "cool",
+            desc: "customized timers"
+        },
 
+        {
+            type: "",
+            name: "Toronto Police Service",
+            link: "http://www.torontopolice.on.ca/recordsmanagement/clearance.php",
+            cat:  "immigration",
+            desc: "Online Clearance Letter System"
+        },
+        
+        {
+            type: "",
+            name: "Branah.com",
+            link: "https://www.branah.com/simplified-to-traditional",
+            cat:  "language",
+            desc: "Simplified to Traditional Chinese Converter"
+        },
+        {
+            type: "",
+            name: "BKRS",
+            link: "https://bkrs.info/",
+            cat:  "language",
+            desc: "Большой китайско-русский словарь"
+        },
+        {
+            type: "",
+            name: "Medical Centers for Canadian PR",
+            link: "http://www.cic.gc.ca/pp-md/pp-list.aspx",
+            cat:  "immigration",
+            desc: ""
+        },
+        
+        {
+            type: "",
+            name: "JobVite",
+            link: "https://app.jobvite.com/js/jobseeker/applications.html?1=1&#/list",
+            cat:  "jobhunt",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Balsamiq",
+            link: "https://balsamiq.com/",
+            cat:  "webdesign",
+            desc: "a graphical user interface mockup and website wireframe builder application"
+        },
+        {
+            type: "",
+            name: "Axure RP",
+            link: "https://www.axure.com/",
+            cat:  "webdesign",
+            desc: "a wireframing, rapid prototyping, documentation and specification software tool"
+        },
+        {
+            type: "",
+            name: "inVision",
+            link: "https://www.invisionapp.com/",
+            cat:  "webdesign",
+            desc: "design prototyping tools"
+        },
+        {
+            type: "",
+            name: "OmniGraffle",
+            link: "https://www.omnigroup.com/omnigraffle",
+            cat:  "webdesign",
+            desc: "a diagramming and digital illustration application"
+        },
+        {
+            type: "",
+            name: "Mark Vaintroub",
+            link: "https://www.marktranslation.com/",
+            cat:  "immigration",
+            desc: "translator (EN-RU)"
+        },
+        {
+            type: "",
+            name: "Zhiteli",
+            link: "https://jitely.info/",
+            cat:  "cool",
+            desc: "search"
+        },
+        {
+            type: "",
+            name: "ChineseText",
+            link: "http://ctext.org/dictionary.pl?if=en",
+            cat:  "language",
+            desc: "dictionary"
+        },
+        {
+            type: "",
+            name: "Russian Consulate Toronto",
+            link: "http://toronto.kdmid.ru/ru.aspx",
+            cat:  "immigration",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Chinese Consulate Toronto",
+            link: "http://toronto.china-consulate.org/eng/",
+            cat:  "immigration",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Funny",
+            link: "https://www.youtube.com/watch?v=6Pm3KQvYk9Q&list=PL31985DCA4E76FDE5",
+            cat:  "funny",
+            desc: "my Youtube play list"
+        },
+        {
+            type: "",
+            name: "Funny 2",
+            link: "https://www.youtube.com/watch?v=8LhWrM1Q-0g&list=PL8271BF904D340FE3",
+            cat:  "funny",
+            desc: "my Youtube play list"
+        },
+        {
+            type: "",
+            name: "Funny 3",
+            link: "https://www.youtube.com/watch?v=GOpRNInnHvc&list=PLRW6BNC-pDixCnmE2Kf1hxXUameU8fVF9",
+            cat:  "funny",
+            desc: "my Youtube play list"
+        },
+        {
+            type: "",
+            name: "British Humor",
+            link: "https://www.youtube.com/watch?v=tTv5ckMe_2M&list=PLRW6BNC-pDixCxb1h8zPdZksQdN6p76a_",
+            cat:  "funny",
+            desc: "my Youtube play list"
+        },
+        {
+            type: "",
+            name: "Thesaurus",
+            link: "http://www.thesaurus.com/",
+            cat:  "language",
+            desc: "for English"
+        },
         {
             type: "",
             name: "Chinese Dictionary MDBG",
