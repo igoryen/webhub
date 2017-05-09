@@ -176,9 +176,11 @@ var Filler = {
             funny: {name: "funny", links: []},
             health: {name: "health", links: []},
             immigration: {name: "immigration", links: []},
+            javascript: {name: "javascript", links: []},
             jobhunt: {name: "jobhunt", links: []},
             language: {name: "language", links: []},
             mine: {name: "mine", links: []},
+            nas: {name: "nas", links: []},
             news: {name: "news", links: []},
             politics: {name: "politics", links: []},
             programming: {name: "programming", links: []},
@@ -192,6 +194,12 @@ var Filler = {
         for (var i = 0; i < objects.length; i++) {
 
             switch (objects[i].cat) {
+                case 'nas':
+                    categories.nas.links.push(objects[i]);
+                    break;
+                case 'javascript':
+                    categories.javascript.links.push(objects[i]);
+                    break;
                 case 'webdesign':
                     categories.webdesign.links.push(objects[i]);
                     break;
@@ -336,6 +344,180 @@ window.onload = function () {
         //     cat:  "",
         //     desc: ""
         // },
+        {
+            type: "",
+            name: "NAS test Carib",
+            link: "https://test.carib-nas.com",
+            cat:  "nas",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "NRS test",
+            link: "https://test.nwrs.ca/newrecovery",
+            cat:  "nas",
+            desc: "Nationwide Recovery Services"
+        },
+
+        {
+            type: "",
+            name: "HCS",
+            link: "https://portaluat.nwhcs.ca/",
+            cat:  "nas",
+            desc: "Home Closing Services of Nationwide"
+        },
+        
+       {
+            type: "",
+            name: "NAS test Mexico",
+            link: "https://test.nasv.mx/NAS",
+            cat:  "nas",
+            desc: ""
+        },
+                {
+            type: "",
+            name: "NAS test Scotia",
+            link: "https://test.nationwideappraisals.com/NAS/scotiabanknas",
+            cat:  "nas",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "NAS",
+            link: "https://test.nationwideappraisals.com",
+            cat:  "nas",
+            desc: "test"
+        },
+        {
+            type: "",
+            name: "Connexions UAT",
+            link: "https://uat-wintrust.inhouseusa.com",
+            cat:  "nas",
+            desc: "Wintrust Mortgage"
+        },
+
+        {
+            type: "",
+            name: "Solutions test",
+            link: "https://test.solutionsamc.com/NAS/",
+            cat:  "nas",
+            desc: "InHouseUSA"
+        },        
+        {
+            type: "",
+            name: "CSS-matic",
+            link: "http://www.cssmatic.com/",
+            cat:  "webdesign",
+            desc: "CSS tools: gradient generator etc."
+        },
+
+        {
+            type: "",
+            name: "Assai",
+            link: "https://github.com/igoryen/assai/blob/master/prj_catalog.md",
+            cat:  "mine",
+            desc: "catalog of my projects on GitHub"
+        },
+        {
+            type: "",
+            name: "Screen-to-GIF",
+            link: "http://www.screentogif.com",
+            cat:  "programming",
+            desc: "Create a GIF from a screenshot"
+        },        
+        {
+            type: "",
+            name: "Jira",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/secure/RapidBoard.jspa?rapidView=7&projectKey=NE",
+            cat:  "nas",
+            desc: "NAS Jira Board"
+        },
+        {
+            type: "",
+            name: "Flexbox cheatsheet",
+            link: "http://www.sketchingwithcss.com/samplechapter/cheatsheet.html",
+            cat:  "webdesign",
+            desc: ""
+        },
+        
+        {
+            type: "",
+            name: "HTML Color Picker",
+            link: "https://www.w3schools.com/colors/colors_picker.asp",
+            cat:  "webdesign",
+            desc: "w3schools.com"
+        },
+        {
+            type: "",
+            name: "Responsive Tables",
+            link: "https://css-tricks.com/accessible-simple-responsive-tables/",
+            cat:  "webdesign",
+            desc: "CSS-Tricks"
+        },
+        {
+            type: "",
+            name: "Flexbox Guide",
+            link: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+            cat:  "webdesign",
+            desc: "CSS-Tricks"
+        },
+        {
+            type: "",
+            name: "Sublime Keyboard Shortcuts",
+            link: "http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_win.html",
+            cat:  "programming",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Text Compare",
+            link: "https://text-compare.com/",
+            cat:  "programming",
+            desc: " the tool to compare texts"
+        },
+        {
+            type: "",
+            name: "TNGOC",
+            link: "http://tngoc.com/",
+            cat:  "nas",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "InHouseUSA",
+            link: "http://www.inhouseusa.com/",
+            cat:  "nas",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Neuroplay",
+            link: "http://www.neuroplay.ca/",
+            cat:  "nas",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "NAS local",
+            link: "http://10.100.20.129:8787/NAS/",
+            cat:  "nas",
+            desc: ""
+        },
+        
+        {
+            type: "",
+            name: "NAS prod",
+            link: "https://www.nationwideappraisals.com/NAS/",
+            cat:  "nas",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Collapsible",
+            link: "http://demos.jquerymobile.com/1.4.0/collapsible/",
+            cat:  "javascript",
+            desc: "widget for jQuery mobile"
+        },
 
         {
             type: "",
@@ -1046,7 +1228,7 @@ window.onload = function () {
         }
     ];
 
-    $(document).ready()
+    // $(document).ready()
     f.renderName("heading", "WebHub");
     // console.log("Hi")
 
