@@ -186,6 +186,8 @@ var Filler = {
             programming: {name: "programming", links: []},
             russia: {name: "russia", links: []},
             social: {name: "social", links: []},
+            useful: {name: "useful", links: []},
+            war: {name: "war", links: []},
             webdesign: {name: "webdesign", links: []},
         };
 
@@ -194,6 +196,12 @@ var Filler = {
         for (var i = 0; i < objects.length; i++) {
 
             switch (objects[i].cat) {
+                case 'useful':
+                    categories.useful.links.push(objects[i]);
+                    break;
+                case 'war':
+                    categories.war.links.push(objects[i]);
+                    break;
                 case 'nas':
                     categories.nas.links.push(objects[i]);
                     break;
@@ -351,6 +359,350 @@ window.onload = function () {
         //     cat:  "",
         //     desc: ""
         // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "",
+            link: "",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Web Design Ledger",
+            link: "https://webdesignledger.com/20-excellent-examples-of-forms-in-web-design/",
+            cat:  "webdesign",
+            desc: "forms"
+        },
+        {
+            type: "",
+            name: "SASS Meister",
+            link: "https://www.sassmeister.com/",
+            cat:  "webdesign",
+            desc: "online SASS compiler"
+        },
+        
+        {
+            type: "",
+            name: "Time & Zone",
+            link: "http://www.timeandzone.com/?hl=en",
+            cat:  "useful",
+            desc: "time & zone converter"
+        },
+        
+        {
+            type: "",
+            name: "Jason Davies",
+            link: "https://www.jasondavies.com//",
+            cat:  "cool",
+            desc: "free lance software engineer"
+        },
+        
+        {
+            type: "",
+            name: "ZhongWen.com",
+            link: "http://zhongwen.com",
+            cat:  "language",
+            desc: "Chinese Characters and Etymology"
+        },
+        
+        {
+            type: "",
+            name: "Reaction GIFs",
+            link: "http://www.reactiongifs.com",
+            cat:  "funny",
+            desc: "Say it with a GIF! "
+        },
+        
+        {
+            type: "",
+            name: "War is Over",
+            link: "http://wio.ru/index.htm",
+            cat:  "war",
+            desc: "photos"
+        },
+        {
+            type: "",
+            name: "Hiwi",
+            link: "https://en.wikipedia.org/wiki/Hiwi_(volunteer)",
+            cat:  "war",
+            desc: "Nazi collaborationists"
+        },
+        {
+            type: "",
+            name: "Census",
+            link: "https://www.census.gov/popclock/world",
+            cat:  "cool",
+            desc: "US census bureau"
+        },
+
+        {
+            type: "",
+            name: "World-o-Meters",
+            link: "http://www.worldometers.info",
+            cat:  "cool",
+            desc: "statistics"
+        },
+
+        
+        {
+            type: "",
+            name: "HipChat",
+            link: "https://inhouseusa.hipchat.com/chat",
+            cat:  "nas",
+            desc: "InHouse"
+        },
         {
             type: "",
             name: "NAS test Carib",
