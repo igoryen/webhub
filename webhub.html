@@ -11,6 +11,10 @@
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
         <script type="text/javascript" src="webhub.js"></script>
+        <script type="text/javascript" src="image-resize.js"></script>
+        <!-- <script type="text/javascript" src="paul-rouget.js"></script> -->
+        <script type="text/javascript" src="ferics2.js"></script>
+
     </head>
     <body>
         <div class="container">
@@ -21,20 +25,34 @@
                 <li><a data-toggle="tab" href="#entertainment">entertainment<span   id="tab-entertainment"></span></a></li>
                 <li><a data-toggle="tab" href="#funny">funny<span                   id="tab-funny"></span></a></li>
                 <li><a data-toggle="tab" href="#health">health<span                 id="tab-health"></span></a></li>
+                <li><a data-toggle="tab" href="#javascript">javascript<span         id="tab-javascript"></span></a></li>
                 <li><a data-toggle="tab" href="#jobhunt">jobhunt<span               id="tab-jobhunt"></span></a></li>
                 <li><a data-toggle="tab" href="#immigration">immigration<span       id="tab-immigration"></span></a></li>
                 <li><a data-toggle="tab" href="#language">language<span             id="tab-language"></span></a></li>
                 <li><a data-toggle="tab" href="#mine">mine<span                     id="tab-mine"></span></a></li>
+                <li><a data-toggle="tab" href="#nas">NAS<span                       id="tab-nas"></span></a></li>
                 <li><a data-toggle="tab" href="#news">news<span                     id="tab-news"></span></a></li>
                 <li><a data-toggle="tab" href="#politics">politics<span             id="tab-politics"></span></a></li>
                 <li><a data-toggle="tab" href="#programming">programming<span       id="tab-programming"></span></a></li>
                 <li><a data-toggle="tab" href="#russia">russia<span                 id="tab-russia"></span></a></li>
                 <li><a data-toggle="tab" href="#social">social<span                 id="tab-social"></span></a></li>
+                <li><a data-toggle="tab" href="#useful">useful<span                 id="tab-useful"></span></a></li>
+                <li><a data-toggle="tab" href="#war">war<span                       id="tab-war"></span></a></li>
                 <li><a data-toggle="tab" href="#webdesign">web-design<span          id="tab-webdesign"></span></a></li>
+                
+
             </ul>
             <div class="tab-content" id="catlist"></div>
-
         </div>
+
+        <div style="background-color: white;">
+            <input name="imagefile[]" type="file" id="takePictureField" accept="image/*" onchange="uploadPhotos(\'#{imageUploadUrl}\')" />
+            <form id="uploadImageForm" enctype="multipart/form-data">
+                <input id="name" value="#{name}" />
+                ... a few more inputs ... 
+            </form>
+        </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>
