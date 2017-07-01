@@ -450,110 +450,112 @@ window.onload = function () {
         //     cat:  "",
         //     desc: ""
         // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "webdesign",
+        //     desc: ""
+        // },
+
+
         {
             type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
+            name: "Fire of the War, the",
+            link: "http://thefireofthewar.ru/1418/index.php/",
+            cat:  "war",
             desc: ""
         },
         {
             type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
+            name: "Uncle Hanzi Chinese Etymology",
+            link: "http://www.internationalscientific.org/CharacterEtymology.aspx",
+            cat:  "language",
+            desc: "Richard Sears"
         },
         {
             type: "",
@@ -578,9 +580,30 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Fire of the War, the",
-            link: "http://thefireofthewar.ru/1418/index.php/",
-            cat:  "war",
+            name: "RGB to Hex color converter",
+            link: "http://www.rapidtables.com/convert/color/rgb-to-hex.htm",
+            cat:  "webdesign",
+            desc: "Rapidtables"
+        },
+        {
+            type: "",
+            name: "Google Keep",
+            link: "https://keep.google.com/#home",
+            cat:  "useful",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "CSS Gradient Generator",
+            link: "http://www.colorzilla.com/gradient-editor/",
+            cat:  "webdesign",
+            desc: "Colorzilla"
+        },
+        {
+            type: "",
+            name: "Prettier websites gain trust",
+            link: "http://www.sciencealert.com/news/20111107-22383.html",
+            cat:  "webdesign",
             desc: ""
         },
         {
@@ -597,6 +620,22 @@ window.onload = function () {
             cat:  "war",
             desc: "month by month"
         },
+        {
+            type: "",
+            name: "Form Design Best Practices",
+            link: "https://www.ventureharbour.com/form-design-best-practices/",
+            cat:  "webdesign",
+            desc: "58 items"
+        },
+        {
+            type: "",
+            name: "Color Names",
+            link: "http://htmlcolorcodes.com/color-names/",
+            cat:  "webdesign",
+            desc: "140 colors"
+        },
+
+
         {
             type: "",
             name: "Victors",
@@ -617,6 +656,27 @@ window.onload = function () {
             link: "http://kpcanada.press/",
             cat:  "news",
             desc: "in Canada"
+        },
+        {
+            type: "",
+            name: "Off Canvas menu",
+            link: "https://codepen.io/ncerminara/pen/quJpi/",
+            cat:  "webdesign",
+            desc: "by Nicholas Cerminara"
+        },
+        {
+            type: "",
+            name: "Why we skip Photoshop",
+            link: "https://signalvnoise.com/posts/1061-why-we-skip-photoshop",
+            cat:  "webdesign",
+            desc: "UI design process: Sketch to Code"
+        },
+        {
+            type: "",
+            name: "SASS",
+            link: "http://sass-lang.com/guide",
+            cat:  "webdesign",
+            desc: "official page"
         },
         {
             type: "",
@@ -813,7 +873,7 @@ window.onload = function () {
         
         {
             type: "",
-            name: "HTML Color Picker",
+            name: "Color Picker",
             link: "https://www.w3schools.com/colors/colors_picker.asp",
             cat:  "webdesign",
             desc: "w3schools.com"
@@ -1755,7 +1815,7 @@ window.onload = function () {
         {
             type: "",
             cat: "webdesign",
-            name: "HTML Color Codes",
+            name: "Color Codes",
             link: "http://htmlcolorcodes.com/",
             desc: ""
         }
