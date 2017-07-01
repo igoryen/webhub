@@ -557,38 +557,38 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
+            name: "Country codes",
+            link: "http://www.worldatlas.com/aatlas/ctycodes.htm",
+            cat:  "useful",
+            desc: "2-letter and 3-letter"
+        },
+        {
+            type: "",
+            name: "War events daily",
+            link: "https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%BE%D0%BD%D0%B8%D0%BA%D0%B0_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D0%9E%D1%82%D0%B5%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B_(%D0%B8%D1%8E%D0%BD%D1%8C_1941_%D0%B3%D0%BE%D0%B4%D0%B0)",
+            cat:  "war",
+            desc: "wikipedia"
+        },
+        {
+            type: "",
+            name: "Blueberry",
+            link: "file:///C:/aaa/ig/blueberry/blueberry.html",
+            cat:  "war",
+            desc: "my war calendar"
+        },
+        {
+            type: "",
+            name: "Fire of the War, the",
+            link: "http://thefireofthewar.ru/1418/index.php/",
+            cat:  "war",
             desc: ""
         },
         {
             type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
-        },
-        {
-            type: "",
-            name: "",
-            link: "",
-            cat:  "webdesign",
-            desc: ""
+            name: "Tom and Jerry (classic collection 1940-1967)",
+            link: "http://watchcartoonsonline.eu/tom-and-jerry-classic-collection-1940-1967/",
+            cat:  "entertainment",
+            desc: "on Watch Cartoons Online"
         },
         {
             type: "",
