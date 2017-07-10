@@ -485,62 +485,62 @@ window.onload = function () {
         //     cat:  "webdesign",
         //     desc: ""
         // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
+        {
+            type: "",
+            name: "Sharij, Anatoly",
+            link: "http://sharij.net/",
+            cat:  "politics",
+            desc: "mediaexpert"
+        },
+        {
+            type: "",
+            name: "Capulin",
+            link: "file:///C:/aaa/ig/capulin/capulin.html",
+            cat:  "mine",
+            desc: "clean up wiki texts for TTS"
+        },
+        {
+            type: "",
+            name: "Calabash",
+            link: "file:///C:/aaa/ig/calabash/calabash.html",
+            cat:  "mine",
+            desc: "like Blueberry only personal"
+        },
+        {
+            type: "",
+            name: "Convert CSV",
+            link: "http://www.convertcsv.com/",
+            cat:  "programming",
+            desc: "to JSON, etc."
+        },
+        {
+            type: "",
+            name: "Karlin, Anatoly",
+            link: "https://www.unz.com/akarlin/",
+            cat:  "politics",
+            desc: "UNZ"
+        },
+        {
+            type: "",
+            name: "Universal Cyrillic decoder",
+            link: "https://2cyr.com/decode/?lang=en",
+            cat:  "programming",
+            desc: "by Petko Yotov (BGR)"
+        },
+        {
+            type: "",
+            name: "Carambola",
+            link: "file:///C:/aaa/ig/carambola/carambola.html",
+            cat:  "mine",
+            desc: "quiz"
+        },
+        {
+            type: "",
+            name: "311 - Toronto Service Requests",
+            link: "https://www1.toronto.ca/wps/portal/contentonly?vgnextoid=416fe2242f28b510VgnVCM10000071d60f89RCRD",
+            cat:  "useful",
+            desc: ""
+        },
 
 
         {
@@ -1221,7 +1221,7 @@ window.onload = function () {
             type: "",
             name: "Pixabay",
             link: "https://pixabay.com/",
-            cat: "programming",
+            cat: "webdesign",
             desc: "Free images and videos "
         },
         {
