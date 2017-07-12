@@ -673,10 +673,96 @@ window.onload = function () {
         },
         {
             type: "",
+            name: "Sharij, Anatoly",
+            link: "http://sharij.net/",
+            cat:  "politics",
+            desc: "mediaexpert"
+        },
+        {
+            type: "",
+            name: "Capulin",
+            link: "file:///C:/aaa/ig/capulin/capulin.html",
+            cat:  "mine",
+            desc: "clean up wiki texts for TTS"
+        },
+        {
+            type: "",
+            name: "Calabash",
+            link: "file:///C:/aaa/ig/calabash/calabash.html",
+            cat:  "mine",
+            desc: "like Blueberry only personal"
+        },
+        {
+            type: "",
+            name: "Convert CSV",
+            link: "http://www.convertcsv.com/",
+            cat:  "programming",
+            desc: "to JSON, etc."
+        },
+        {
+            type: "",
+            name: "Karlin, Anatoly",
+            link: "https://www.unz.com/akarlin/",
+            cat:  "politics",
+            desc: "UNZ"
+        },
+        {
+            type: "",
+            name: "Universal Cyrillic decoder",
+            link: "https://2cyr.com/decode/?lang=en",
+            cat:  "programming",
+            desc: "by Petko Yotov (BGR)"
+        },
+        {
+            type: "",
+            name: "Carambola",
+            link: "file:///C:/aaa/ig/carambola/carambola.html",
+            cat:  "mine",
+            desc: "quiz"
+        },
+        {
+            type: "",
+            name: "311 - Toronto Service Requests",
+            link: "https://www1.toronto.ca/wps/portal/contentonly?vgnextoid=416fe2242f28b510VgnVCM10000071d60f89RCRD",
+            cat:  "useful",
+            desc: ""
+        },
+
+
+        {
+            type: "",
+            name: "Fire of the War, the",
+            link: "http://thefireofthewar.ru/1418/index.php/",
+            cat:  "war",
+            desc: ""
+        },
+        {
+            type: "",
             name: "Uncle Hanzi Chinese Etymology",
             link: "http://www.internationalscientific.org/CharacterEtymology.aspx",
             cat:  "language",
             desc: "Richard Sears"
+        },
+        {
+            type: "",
+            name: "Country codes",
+            link: "http://www.worldatlas.com/aatlas/ctycodes.htm",
+            cat:  "useful",
+            desc: "2-letter and 3-letter"
+        },
+        {
+            type: "",
+            name: "War events daily",
+            link: "https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%BE%D0%BD%D0%B8%D0%BA%D0%B0_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D0%9E%D1%82%D0%B5%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B_(%D0%B8%D1%8E%D0%BD%D1%8C_1941_%D0%B3%D0%BE%D0%B4%D0%B0)",
+            cat:  "war",
+            desc: "wikipedia"
+        },
+        {
+            type: "",
+            name: "Blueberry",
+            link: "file:///C:/aaa/ig/blueberry/blueberry.html",
+            cat:  "war",
+            desc: "my war calendar"
         },
         {
             type: "",
@@ -708,6 +794,20 @@ window.onload = function () {
         },
         {
             type: "",
+            name: "Tom and Jerry (classic collection 1940-1967)",
+            link: "http://watchcartoonsonline.eu/tom-and-jerry-classic-collection-1940-1967/",
+            cat:  "entertainment",
+            desc: "on Watch Cartoons Online"
+        },
+        {
+            type: "",
+            name: "War's Timeline",
+            link: "https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%BE%D0%BD%D0%B8%D0%BA%D0%B0_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D0%9E%D1%82%D0%B5%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B",
+            cat:  "war",
+            desc: "month by month"
+        },
+        {
+            type: "",
             name: "Form Design Best Practices",
             link: "https://www.ventureharbour.com/form-design-best-practices/",
             cat:  "webdesign",
@@ -722,6 +822,27 @@ window.onload = function () {
         },
 
 
+        {
+            type: "",
+            name: "Victors",
+            link: "http://www.pobediteli.ru/",
+            cat:  "war",
+            desc: "Multimedia map of the War"
+        },
+        {
+            type: "",
+            name: "Moment",
+            link: "https://momentjs.com/",
+            cat:  "programming",
+            desc: "JS library for dates"
+        },
+        {
+            type: "",
+            name: "Komsomol Truth",
+            link: "http://kpcanada.press/",
+            cat:  "news",
+            desc: "in Canada"
+        },
         {
             type: "",
             name: "Off Canvas menu",
@@ -764,8 +885,7 @@ window.onload = function () {
             link: "http://www.timeandzone.com/?hl=en",
             cat:  "useful",
             desc: "time & zone converter"
-        },
-        
+        },        
         {
             type: "",
             name: "Jason Davies",
@@ -1287,7 +1407,7 @@ window.onload = function () {
             type: "",
             name: "Pixabay",
             link: "https://pixabay.com/",
-            cat: "programming",
+            cat: "webdesign",
             desc: "Free images and videos "
         },
         {
