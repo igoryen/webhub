@@ -181,6 +181,7 @@ var Filler = {
             language: {name: "language", links: []},
             mine: {name: "mine", links: []},
             nas: {name: "nas", links: []},
+            nas_tickets: {name: "nas_tickets", links: []},
             news: {name: "news", links: []},
             politics: {name: "politics", links: []},
             programming: {name: "programming", links: []},
@@ -201,6 +202,9 @@ var Filler = {
                     break;
                 case 'war':
                     categories.war.links.push(objects[i]);
+                    break;
+                case 'nas_tickets':
+                    categories.nas_tickets.links.push(objects[i]);
                     break;
                 case 'nas':
                     categories.nas.links.push(objects[i]);
@@ -408,146 +412,265 @@ window.onload = function () {
         //     cat:  "",
         //     desc: ""
         // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
+        {
+            type: "",
+            name: "Color calculator from HEX to RGBA",
+            link: "http://hex2rgba.devoth.com/",
+            cat:  "webdesign",
+            desc: "Devoth"
+        },
+        {
+            type: "",
+            name: "Adaptive Placeholder",
+            link: "https://codepen.io/dannykingme/pen/IvFuB",
+            cat:  "webdesign",
+            desc: "Danny King"
+        },
+        {
+            type: "",
+            name: "Text Fields Design",
+            link: "https://uxplanet.org/designing-perfect-text-field-clarity-accessibility-and-user-effort-d03c1e26004b",
+            cat:  "webdesign",
+            desc: "UX Planet"
+        },
+        {
+            type: "",
+            name: "Pinyin to GR chart",
+            link: "http://home.iprimus.com.au/richwarm/gr/py2grtab.htm",
+            cat:  "language",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Ampersand in SASS",
+            link: "https://css-tricks.com/the-sass-ampersand/",
+            cat:  "webdesign",
+            desc: "CSS tricks"
+        },
+        {
+            type: "",
+            name: "Content-responsive text area",
+            link: "http://jsfiddle.net/C8e4w/1/",
+            cat:  "webdesign",
+            desc: "by Mark Vaughn"
+        },
+        {
+            type: "",
+            name: "Textarea Tricks",
+            link: "https://css-tricks.com/textarea-tricks/",
+            cat:  "webdesign",
+            desc: "CSS tricks"
+        },
+        {
+            type: "",
+            name: "Mandarin Phrasebook in GR",
+            link: "https://docs.google.com/spreadsheets/d/1X-_lb2zCR0sKH3OuigUZiwCSpITsGaxtEy4Flm8bsm8/edit#gid=0",
+            cat:  "language",
+            desc: "a Google Doc sheet"
+        },
+        {
+            type: "",
+            name: "Giphy",
+            link: "https://giphy.com",
+            cat:  "funny",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "NE-2895",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2895",
+            cat:  "nas_tickets",
+            desc: "Refactor the \"Select service type\" list into select"
+        },
+        {
+            type: "",
+            name: "Bluetongue",
+            link: "file:///C:/ig/bluetongue/index.html#",
+            cat:  "mine",
+            desc: "an example of a page using a top dropdown menu with submenus (CSS3)"
+        },
+        {
+            type: "",
+            name: "Appleberry",
+            link: "file:///C:/ig/appleberry/index.html",
+            cat:  "mine",
+            desc: "an example of a page using an off-canvas menu"
+        },
+        {
+            type: "",
+            name: "Request page mockup 1",
+            link: "file:///C:/ig/NAS/NE/2720/mockup/index.html",
+            cat:  "nas",
+            desc: "local"
+        },
+        {
+            type: "",
+            name: "FCM Prtners",
+            link: "http://dev-fcmpartners.vm59-inhouseusa.com",
+            cat:  "nas",
+            desc: "vm, pavel"
+        },
+        {
+            type: "",
+            name: "Perl Mortgage",
+            link: "http://dev-perlmortgage.vm59-inhouseusa.com",
+            cat:  "nas",
+            desc: "vm, pavel"
+        },
+        {
+            type: "",
+            name: "NE-2691",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2691",
+            cat:  "nas_tickets",
+            desc: "Signature password modals styling"
+        },
+        {
+            type: "",
+            name: "CSS3 responsive menu dropdown + submenu with logo",
+            link: "https://codepen.io/emredenx/pen/ojcxl",
+            cat:  "webdesign",
+            desc: "emre"
+        },
+        {
+            type: "",
+            name: "Blind Text Generator",
+            link: "http://www.blindtextgenerator.com/lorem-ipsum",
+            cat:  "webdesign",
+            desc: "dummy text"
+        },
+        {
+            type: "",
+            name: "Cainito",
+            link: "file:///C:/ig/cainito/cainito.html",
+            cat:  "mine",
+            desc: "checkbox styles"
+        },
+        {
+            type: "",
+            name: "Color Picking tool",
+            link: "http://www.hexcolortool.com/",
+            cat:  "webdesign",
+            desc: "Dan's Tools"
+        },
+        {
+            type: "",
+            name: "Request Page mockup 2",
+            link: "file:///C:/ig/NAS/NE/2720/mockup2/index.html",
+            cat:  "nas",
+            desc: "local"
+        },
+        {
+            type: "",
+            name: "NE-2847",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2847",
+            cat:  "nas_tickets",
+            desc: "HTML5-Schedule A [Calculation]"
+        },
+        {
+            type: "",
+            name: "NE-2720",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2720",
+            cat:  "nas_tickets",
+            desc: "NAS Request Page Design"
+        },
+        {
+            type: "",
+            name: "NE-2873",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2873",
+            cat:  "nas_tickets",
+            desc: "Datepicker popup truncated in certain cases"
+        },
+        {
+            type: "",
+            name: "Request page mockup 2",
+            link: "http://htmltest.nationwideappraisals.com/request2",
+            cat:  "nas",
+            desc: "top menu"
+        },
+        {
+            type: "",
+            name: "Menu: responsive, dropdown, submenu, logo",
+            link: "https://codepen.io/emredenx/pen/ojcxl",
+            cat:  "webdesign",
+            desc: "by emre"
+        },
+        {
+            type: "",
+            name: "Tooltip, Responsive and Mobile-friendly",
+            link: "https://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly",
+            cat:  "webdesign",
+            desc: "Osvaldas Valutis"
+        },
+        {
+            type: "",
+            name: "Icon Finder",
+            link: "https://www.iconfinder.com/",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Request page mockup 1",
+            link: "http://htmltest.nationwideappraisals.com/request1",
+            cat:  "nas",
+            desc: "off-canvas menu"
+        },
+        {
+            type: "",
+            name: "CSS 3D transforms",
+            link: "https://www.smashingmagazine.com/2012/01/adventures-in-the-third-dimension-css-3-d-transforms/",
+            cat:  "webdesign",
+            desc: "Peter Gasston"
+        },
+        {
+            type: "",
+            name: "InHouseUSA/Connexions",
+            link: "https://github.com/InHouseUSA/Connexions",
+            cat:  "nas",
+            desc: "at Github"
+        },
+        {
+            type: "",
+            name: "Wintrust Mortgage",
+            link: "http://dev-appraisals.wintrustmortgage.com/tandem/search/",
+            cat:  "nas",
+            desc: "dev"
+        },
+        {
+            type: "",
+            name: "Chinese Text Project",
+            link: "http://ctext.org/pinyin.pl",
+            cat:  "language",
+            desc: "Phonetic conversion tool"
+        },
+        {
+            type: "",
+            name: "147 colors",
+            link: "http://www.colors.commutercreative.com/",
+            cat:  "webdesign",
+            desc: "Brian Maier"
+        },
+        {
+            type: "",
+            name: "got mortgage",
+            link: "http://dev-gotmortgage.vm158-inhouseusa.com",
+            cat:  "nas",
+            desc: "dev Gregory"
+        },
+        {
+            type: "",
+            name: "Noise Texture Generator",
+            link: "http://www.noisetexturegenerator.com/",
+            cat:  "webdesign",
+            desc: "Andrew Ckor"
+        },
+        {
+            type: "",
+            name: "Tympanus",
+            link: "https://tympanus.net/codrops/",
+            cat:  "webdesign",
+            desc: "Codrops"
+        },
         {
             type: "",
             name: "Uncle Hanzi Chinese Etymology",
