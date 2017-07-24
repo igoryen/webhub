@@ -478,13 +478,13 @@ window.onload = function () {
         //     cat:  "webdesign",
         //     desc: ""
         // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
+        {
+            type: "",
+            name: "Better Call Saul 3",
+            link: "http://seasonvar.ru/serial-15485-Luchshe_zvonite_Solu-003-sezon.html",
+            cat:  "entertainment",
+            desc: "seasonvar.ru"
+        },
         {
             type: "",
             name: "Sharij, Anatoly",
