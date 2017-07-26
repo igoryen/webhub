@@ -377,34 +377,188 @@ window.onload = function () {
         //     cat:  "",
         //     desc: ""
         // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
+        {
+            type: "",
+            name: "NE-2850",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2850",
+            cat:  "nas_tickets",
+            desc: "HTML5 CSS/Style Fixes "
+        },
+        {
+            type: "",
+            name: "NE-2654",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2654",
+            cat:  "nas_tickets",
+            desc: "Styling issues on validation "
+        },
+        {
+            type: "",
+            name: "NE-2686",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2686",
+            cat:  "nas_tickets",
+            desc: "Comparable Search Modal breaks the scrollbar "
+        },
+        {
+            type: "",
+            name: "NE-2847",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2847",
+            cat:  "nas_tickets",
+            desc: "HTML5-Schedule A [Calculation] "
+        },
+        {
+            type: "",
+            name: "NE-2686",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2686",
+            cat:  "nas_tickets",
+            desc: "Comparable Search Modal breaks the scrollbar "
+        },
+        {
+            type: "",
+            name: "NE-2936",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2936",
+            cat:  "nas_tickets",
+            desc: "Re: Initial design and planning for Full Form CUSPAP layout "
+        },
+        {
+            type: "",
+            name: "NE-2848",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2848",
+            cat:  "nas_tickets",
+            desc: "Disable clicks "
+        },
+        {
+            type: "",
+            name: "MAR-522",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/MAR-522",
+            cat:  "nas_tickets",
+            desc: "web and phone on HCS logo "
+        },
+        {
+            type: "",
+            name: "MAR-523",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/MAR-523",
+            cat:  "nas_tickets",
+            desc: "NAS mobile app banner for system generated email "
+        },
+        {
+            type: "",
+            name: "MAR-524",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/MAR-524",
+            cat:  "nas_tickets",
+            desc: "Add HCS logo on image for email banner header "
+        },
+        {
+            type: "",
+            name: "NE-3007",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-3007",
+            cat:  "nas_tickets",
+            desc: "Credit Card Payment Page - Add Interact and Credit Card Payment Image"
+        },
+        {
+            type: "",
+            name: "MAR-525",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/MAR-525",
+            cat:  "nas_tickets",
+            desc: "Create a real estate listing brochure "
+        },
+        {
+            type: "",
+            name: "MAR-526",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/MAR-526",
+            cat:  "nas_tickets",
+            desc: "InHouseUSA flyer "
+        },
+        {
+            type: "",
+            name: "NE-2885",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2885",
+            cat:  "nas_tickets",
+            desc: "Igor Research and Implementation "
+        },
+        {
+            type: "",
+            name: "Billing Information page",
+            link: "http://10.100.20.129:8787/NAS/MakePayment?apprequestnbr=MTUwNTMwMg==&apprequestencdnbr=6714035fd753d619abfeb630d045ccf7&lang=English",
+            cat:  "nas",
+            desc: "local"
+        },
+        {
+            type: "",
+            name: "Color Hunter",
+            link: "http://www.colorhunter.com/",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "FontsC",
+            link: "http://www.fontsc.com/index.html",
+            cat:  "webdesign",
+            desc: "Sea of free fonts"
+        },
+        {
+            type: "",
+            name: "Beautify JS",
+            link: "http://jsbeautifier.org/",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Beautify CSS",
+            link: "http://www.cleancss.com/css-beautify/",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Icons in UTF-8",
+            link: "https://www.utf8icons.com/",
+            cat:  "webdesign",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Buttons, radioactive",
+            link: "http://zurb.com/playground/radioactive-buttons",
+            cat:  "webdesign",
+            desc: "zurb.com"
+        },
+        {
+            type: "",
+            name: "Unsplash",
+            link: "https://unsplash.com/",
+            cat:  "webdesign",
+            desc: "Free Photos"
+        },
+        {
+            type: "",
+            name: "Modals, responsive",
+            link: "https://codepen.io/ettrics/pen/Jdjdzp",
+            cat:  "webdesign",
+            desc: "by Ettrics"
+        },
+        {
+            type: "",
+            name: "Textarea hugging content",
+            link: "https://coderwall.com/p/imkqoq/resize-textarea-to-fit-content",
+            cat:  "webdesign",
+            desc: "from Coderwall.com"
+        },
+        {
+            type: "",
+            name: "email mockup 1 - new request submitted",
+            link: "file:///C:/ig/NAS/Marketing%20Dpt/170714%20-%20NAS%20mobile%20app%20email/mockup1/index.html",
+            cat:  "nas",
+            desc: "on local"
+        },
+        {
+            type: "",
+            name: "email mockup 1 - new request submitted",
+            link: "http://htmltest.nationwideappraisals.com/emails/NAS-MobileApp/mockup1/",
+            cat:  "nas",
+            desc: "on HTML test"
+        },
         {
             type: "",
             name: "a la mode",
@@ -1046,7 +1200,7 @@ window.onload = function () {
             type: "",
             name: "Jira",
             link: "https://nasjiraatm.nationwideappraisals.com:8443/secure/RapidBoard.jspa?rapidView=7&projectKey=NE",
-            cat:  "nas",
+            cat:  "nas_tickets",
             desc: "NAS Jira Board"
         },
         {
