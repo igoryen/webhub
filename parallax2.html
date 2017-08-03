@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		html {
+	        height: 100%;
+	        overflow: hidden;
+	    }
+	    body { 
+	        /*font-family: Nunito;*/
+	        height: 100%;
+	        margin:0;
+	        overflow-x: hidden;
+	        overflow-y: scroll;
+	        padding:0;
+	        perspective: 1px;
+	        transform-style: preserve-3d;
+	    }
+	    p {
+	        /*color: #333;
+	        font-size: 140%;
+	        line-height: 150%;*/
+	    }
+	    /*#title {
+	        background-image: url("http://lorempixel.com/640/480/abstract/6/");
+	        background-attachment: fixed; 
+	    }*/
+	    .slide {
+	        /*box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);*/
+	        box-sizing: border-box;
+	        min-height: 100vh;
+	        padding: 25vh 10%;
+	        position: relative;
+	        transform-style: inherit;
+	        width: 100vw;
+	    }
+	    .slide:before {
+	        bottom: 0;
+	        content: "";
+	        left:0;
+	        position: absolute;
+	        right:0;
+	        top: 0;
+	    }
+	    .slide, .slide:before {
+	        background: 50% 50% / cover;  
+	    }
+	    #slide1:before {
+	        background-image: url("http://lorempixel.com/640/480/abstract/4/");
+	        transform: translateZ(-1px) scale(2);
+	        z-index:-1;
+	    }
+	    img {
+	        /*background: rgba(240,230,220, .7);
+	        border-radius: 5px;
+	        box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+	        height: 240px;
+	        left: 35%;
+	        padding: 10px;
+	        position: absolute;
+	        top: 50%;
+	        transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+	        width: 320px;*/
+	    }
+	</style>
+</head>
+<body>
+	<!-- <div id="title" class="slide header">
+        <h1>Pure CSS Parallax</h1>
+        <div>id="title" class="slide header"</div>
+    </div> -->
+    <div id="slide1" class="slide">
+        <div class="title">
+            <h1>Slide 1</h1>
+            <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+        </div>
+    </div>
+
+</body>
+</html>
