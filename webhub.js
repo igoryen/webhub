@@ -377,6 +377,55 @@ window.onload = function () {
         //     cat:  "",
         //     desc: ""
         // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        // {
+        //     type: "",
+        //     name: "",
+        //     link: "",
+        //     cat:  "",
+        //     desc: ""
+        // },
+        {
+            type: "",
+            name: "Radios as Select",
+            link: "https://codepen.io/igoryen/pen/zdKxKq",
+            cat:  "mine",
+            desc: "codepen"
+        },
+        {
+            type: "",
+            name: "Adaptive placeholder on fixed-size textarea",
+            link: "https://codepen.io/igoryen/pen/prNKxN",
+            cat:  "mine",
+            desc: "codepen"
+        },
+        {
+            type: "",
+            name: "Masonry",
+            link: "https://masonry.desandro.com",
+            cat:  "javascript",
+            desc: "library by David DeSandro"
+        },
+        {
+            type: "",
+            name: "NE-3014",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-3014",
+            cat:  "nas_tickets",
+            desc: "Disable user profile on TNGOC.com"
+        },
         {
             type: "",
             name: "NE-2850",
@@ -500,7 +549,7 @@ window.onload = function () {
             type: "",
             name: "Beautify JS",
             link: "http://jsbeautifier.org/",
-            cat:  "webdesign",
+            cat:  "javascript",
             desc: ""
         },
         {
