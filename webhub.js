@@ -466,13 +466,13 @@ window.onload = function () {
         //     cat:  "webdesign",
         //     desc: ""
         // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
+        {
+            type: "",
+            name: "RegExr",
+            link: "http://regexr.com/",
+            cat:  "programming",
+            desc: "by G Skinner"
+        },
         {
             type: "",
             name: "Blueberry Data",
