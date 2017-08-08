@@ -1,4 +1,5 @@
 // 3
+
 var Filler = {
     // categs: {
     //     bible: {name: "bible", links: []},
@@ -172,6 +173,7 @@ var Filler = {
         var categories = {
             bible: {name: "bible", links: []},
             cool: {name: "cool", links: []},
+            current: {name: "current", links: []},
             entertainment: {name: "entertainment", links: []},
             funny: {name: "funny", links: []},
             health: {name: "health", links: []},
@@ -197,6 +199,9 @@ var Filler = {
         for (var i = 0; i < objects.length; i++) {
 
             switch (objects[i].cat) {
+                case 'current':
+                    categories.current.links.push(objects[i]);
+                    break;
                 case 'useful':
                     categories.useful.links.push(objects[i]);
                     break;
@@ -468,20 +473,20 @@ window.onload = function () {
         //     cat:  "webdesign",
         //     desc: ""
         // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
+        {
+            type: "",
+            name: "Blueberry Data",
+            link: "https://docs.google.com/spreadsheets/d/1ILu-RnEWrrIkQTdFQd9oOFE2Puu7syVAqc6N_R-9GuE/edit#gid=1666357189",
+            cat:  "current",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Union Cartoon",
+            link: "https://www.youtube.com/user/ClassicCartoonsMedia",
+            cat:  "entertainment",
+            desc: "Youtube"
+        },
         {
             type: "",
             name: "Better Call Saul 3",
