@@ -474,6 +474,13 @@ window.onload = function () {
             desc: "by G Skinner"
         },
         {
+            ype: "",
+            name: "Roget's",
+            link: "https://docs.google.com/spreadsheets/d/1T-V6-tGAmyLxtm-lapbDNIW_cYgpwJT9qsbyqeb1zNY/edit#gid=0",
+            cat:  "current",
+            desc: "categories of world"
+        },
+        {
             type: "",
             name: "Blueberry Data",
             link: "https://docs.google.com/spreadsheets/d/1ILu-RnEWrrIkQTdFQd9oOFE2Puu7syVAqc6N_R-9GuE/edit#gid=1666357189",
@@ -771,7 +778,7 @@ window.onload = function () {
             type: "",
             name: "Mandarin Phrasebook in GR",
             link: "https://docs.google.com/spreadsheets/d/1X-_lb2zCR0sKH3OuigUZiwCSpITsGaxtEy4Flm8bsm8/edit#gid=0",
-            cat:  "language",
+            cat:  "current",
             desc: "a Google Doc sheet"
         },
         {

@@ -1,5 +1,6 @@
 body {
-	font-family: Verdana, sans-serif;
+	//font-family: Verdana, sans-serif;
+    font-family: 'Rambla', sans-serif;
 	padding-left: 1em;
     background-color: #17202a;
 }
@@ -45,10 +46,11 @@ img {
         color: gray;
     }
     li {
-        font-family: "Verdana", sans-serif;
+        //font-family: "Verdana", sans-serif;
+        font-family: 'Rambla', sans-serif;
         font-size: small;
         .desc {
-            color: gray;
+            color: #bbb;
             margin-left: 0.5em;
             font-style: italic;
         }

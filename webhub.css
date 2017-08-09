@@ -1,53 +1,66 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\000031}}
 body {
-  font-family: Verdana, sans-serif;
+  font-family: 'Rambla', sans-serif;
   padding-left: 1em;
   background-color: #17202a; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\000038}}
 .container {
   margin-top: 0.5em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000312}}
 #heading {
   font-size: 2em;
   color: lightgray;
   font-weight: bolder;
   margin-bottom: 2%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000319}}
 img {
   width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000322}}
 #tabs {
   display: inline-block;
   padding-right: 4%;
   float: left;
   background-color: #17202a;
   width: 25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000328}}
   #tabs a {
     text-decoration: none;
     color: #abb2b9;
     padding-top: 3px;
     padding-bottom: 3px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000333}}
     #tabs a:hover {
       background-color: #2c3e50; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000339}}
 #catlist {
   height: 100%;
   width: 73%;
   display: inline-block;
   background-color: #f8f9f9;
   padding: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000345}}
   #catlist h3 {
     color: gray; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000348}}
   #catlist li {
-    font-family: "Verdana", sans-serif;
+    font-family: 'Rambla', sans-serif;
     font-size: small; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000352}}
     #catlist li .desc {
-      color: gray;
+      color: #bbb;
       margin-left: 0.5em;
       font-style: italic; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000357}}
     #catlist li iframe {
       display: block; }
 
 /************ YOUTUBE VIDEO a*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000364}}
 .youtube {
   background-color: #000;
   margin-bottom: 30px;
@@ -55,12 +68,14 @@ img {
   padding-top: 56.25%;
   overflow: hidden;
   cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000374}}
   .youtube img {
     width: 100%;
     top: -16.84%;
     left: 0;
     opacity: 0.7;
     cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000382}}
   .youtube .play-button {
     width: 90px;
     height: 60px;
@@ -70,21 +85,25 @@ img {
     opacity: 0.8;
     border-radius: 6px;
     cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\0000392}}
     .youtube .play-button:before {
       content: "";
       border-style: solid;
       border-width: 15px 0 15px 26.0px;
       border-color: transparent transparent transparent #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003100}}
   .youtube img,
   .youtube iframe,
   .youtube .play-button,
   .youtube .play-button:before {
     position: absolute; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003107}}
   .youtube .play-button,
   .youtube .play-button:before {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003114}}
   .youtube iframe {
     height: 100%;
     width: 100%;
@@ -93,6 +112,7 @@ img {
 
 /************ YOUTUBE VIDEO z*/
 /*.yt_modal {*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003126}}
 #modal_Ur64xVRp5L0 {
   display: none;
   /* Hidden by default */
@@ -116,6 +136,7 @@ img {
   /*Black w/ opacity*/ }
 
 /* Modal Content */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003141}}
 #content_Ur64xVRp5L0 {
   background-color: #fefefe;
   margin: auto;
@@ -123,17 +144,20 @@ img {
   border: 1px solid #888;
   width: 80%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003148}}
 span[id^=trigger] {
   cursor: pointer; }
 
 /* The Close Button */
 /*.yt_close {*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003153}}
 #trigger_Ur64xVRp5L0 {
   color: #aaaaaa;
   /*float: right;*/
   font-size: 14px;
   font-weight: bold; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/aaa\/ig\/webhub\/webhub\.scss}line{font-family:\00003161}}
 #close_Ur64xVRp5L0:hover, #close_Ur64xVRp5L0:focus {
   color: #000;
   text-decoration: none;
