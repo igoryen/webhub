@@ -361,111 +361,13 @@ window.onload = function () {
         //     cat:  "",
         //     desc: ""
         // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "",
-        //     desc: ""
-        // },
-        // {
-        //     type: "",
-        //     name: "",
-        //     link: "",
-        //     cat:  "webdesign",
-        //     desc: ""
-        // },
+        {
+            type: "",
+            name: "Programming terms in Chinese",
+            link: "http://www.iicm.org.tw/term/termb_0.htm",
+            cat:  "language",
+            desc: ""
+        },
         {
             type: "",
             name: "RegExr",
