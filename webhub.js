@@ -363,6 +363,14 @@ window.onload = function () {
         // },
         {
             type: "",
+            name: "Sublime icons and their meanings",
+            link: "https://stackoverflow.com/questions/3917925/what-do-the-arrow-icons-in-subclipse-mean",
+            cat:  "programming",
+            desc: "on stackoverflow"
+        },
+        
+        {
+            type: "",
             name: "Programming terms in Chinese",
             link: "http://www.iicm.org.tw/term/termb_0.htm",
             cat:  "language",
