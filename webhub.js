@@ -363,6 +363,66 @@ window.onload = function () {
         // },
         {
             type: "",
+            name: "Mockup :: request page - 3",
+            link: "http://htmltest.nationwideappraisals.com/mockups/mockup3/",
+            cat:  "nas",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Mockup :: request page - 4",
+            link: "http://htmltest.nationwideappraisals.com/mockups/mockup4/",
+            cat:  "nas",
+            desc: ""
+        },
+
+        {
+            type: "",
+            name: "NAS dev",
+            link: "http://10.100.20.129:8989/NAS/",
+            cat:  "nas",
+            desc: ""
+        },        
+        {
+            type: "",
+            name: "Free Formatter",
+            link: "http://www.freeformatter.com/",
+            cat:  "programming",
+            desc: "for HTML, JSON etc."
+        },
+        {
+            type: "",
+            name: "TNG test",
+            link: "http://htmltest.nationwideappraisals.com/test_tng/index.html",
+            cat:  "nas",
+            desc: ""
+        },        
+        {
+            type: "",
+            name: "Mockup :: TNG what's new page",
+            link: "file:///C:/_work/MAR/527/new/index.html",
+            cat:  "nas",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Character Entity Reference Chart",
+            link: "https://dev.w3.org/html5/html-author/charref",
+            cat:  "webdesign",
+            desc: "dev.w3.org"
+        },
+
+        
+        {
+            type: "",
+            name: "Best practices for speeding up your web site",
+            link: "https://developer.yahoo.com/performance/rules.html",
+            cat:  "programming",
+            desc: "Yahoo developer network"
+        },
+        
+        {
+            type: "",
             name: "Sublime icons and their meanings",
             link: "https://stackoverflow.com/questions/3917925/what-do-the-arrow-icons-in-subclipse-mean",
             cat:  "programming",
@@ -616,14 +676,14 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "email mockup 1 - new request submitted",
-            link: "file:///C:/ig/NAS/Marketing%20Dpt/170714%20-%20NAS%20mobile%20app%20email/mockup1/index.html",
+            name: "Mockup :: email 1 - new request submitted",
+            link: "file:///C:/_work/MAR/522/mockup1/index.html",
             cat:  "nas",
             desc: "on local"
         },
         {
             type: "",
-            name: "email mockup 1 - new request submitted",
+            name: "Mockup :: new request submitted",
             link: "http://htmltest.nationwideappraisals.com/emails/NAS-MobileApp/mockup1/",
             cat:  "nas",
             desc: "on HTML test"
@@ -721,7 +781,7 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Request page mockup 1",
+            name: "Mockup :: Request page - 1",
             link: "file:///C:/ig/NAS/NE/2720/mockup/index.html",
             cat:  "nas",
             desc: "local"
@@ -777,8 +837,8 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Request Page mockup 2",
-            link: "file:///C:/ig/NAS/NE/2720/mockup2/index.html",
+            name: "Mockup :: Request Page - 2",
+            link: "file:///C:/_work/NE/2720/mockup2/index.html",
             cat:  "nas",
             desc: "local"
         },
@@ -805,8 +865,8 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Request page mockup 2",
-            link: "http://htmltest.nationwideappraisals.com/request2",
+            name: "Mockup :: Request page - 1",
+            link: "http://htmltest.nationwideappraisals.com/mockups/mockup1",
             cat:  "nas",
             desc: "top menu"
         },
@@ -833,8 +893,8 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Request page mockup 1",
-            link: "http://htmltest.nationwideappraisals.com/request1",
+            name: "Mockup :: Request page - 2",
+            link: "http://htmltest.nationwideappraisals.com/mockups/mockup2",
             cat:  "nas",
             desc: "off-canvas menu"
         },
@@ -1210,10 +1270,10 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "NAS",
+            name: "NAS test",
             link: "https://test.nationwideappraisals.com",
             cat:  "nas",
-            desc: "test"
+            desc: ""
         },
         {
             type: "",
