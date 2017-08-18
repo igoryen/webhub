@@ -182,6 +182,7 @@ var Filler = {
             jobhunt: {name: "jobhunt", links: []},
             language: {name: "language", links: []},
             mine: {name: "mine", links: []},
+            mockups: {name: "mockups", links: []},
             nas: {name: "nas", links: []},
             nas_tickets: {name: "nas_tickets", links: []},
             news: {name: "news", links: []},
@@ -199,6 +200,9 @@ var Filler = {
         for (var i = 0; i < objects.length; i++) {
 
             switch (objects[i].cat) {
+                case 'mockups':
+                    categories.mockups.links.push(objects[i]);
+                    break;
                 case 'current':
                     categories.current.links.push(objects[i]);
                     break;
@@ -363,19 +367,40 @@ window.onload = function () {
         // },
         {
             type: "",
-            name: "Mockup :: request page - 3",
+            name: "Scots words: all",
+            link: "http://mudcat.org/scots/display_all.cfm",
+            cat:  "language",
+            desc: "mudcat.org"
+        },
+        
+        {
+            type: "",
+            name: "request page - 3",
             link: "http://htmltest.nationwideappraisals.com/mockups/mockup3/",
-            cat:  "nas",
-            desc: ""
+            cat:  "mockups",
+            desc: "remote test"
         },
         {
             type: "",
-            name: "Mockup :: request page - 4",
+            name: "request page - 4",
             link: "http://htmltest.nationwideappraisals.com/mockups/mockup4/",
-            cat:  "nas",
-            desc: ""
+            cat:  "mockups",
+            desc: "remote test"
         },
-
+        {
+            type: "",
+            name: "request page - 3",
+            link: "file:///C:/_work/NE/2720/mockup3/index.html",
+            cat:  "mockups",
+            desc: "local"
+        },
+        {
+            type: "",
+            name: "request page - 4",
+            link: "file:///C:/_work/NE/2720/mockup4/index.html",
+            cat:  "mockups",
+            desc: "local"
+        },
         {
             type: "",
             name: "NAS dev",
@@ -399,10 +424,10 @@ window.onload = function () {
         },        
         {
             type: "",
-            name: "Mockup :: TNG what's new page",
+            name: "TNG what's new page",
             link: "file:///C:/_work/MAR/527/new/index.html",
-            cat:  "nas",
-            desc: ""
+            cat:  "mockups",
+            desc: "local"
         },
         {
             type: "",
@@ -676,16 +701,16 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Mockup :: email 1 - new request submitted",
+            name: "email 1 - new request submitted",
             link: "file:///C:/_work/MAR/522/mockup1/index.html",
-            cat:  "nas",
-            desc: "on local"
+            cat:  "mockups",
+            desc: "local"
         },
         {
             type: "",
-            name: "Mockup :: new request submitted",
+            name: "new request submitted",
             link: "http://htmltest.nationwideappraisals.com/emails/NAS-MobileApp/mockup1/",
-            cat:  "nas",
+            cat:  "mockups",
             desc: "on HTML test"
         },
         {
@@ -781,9 +806,9 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Mockup :: Request page - 1",
-            link: "file:///C:/ig/NAS/NE/2720/mockup/index.html",
-            cat:  "nas",
+            name: "request page - 1",
+            link: "file:///C:/_work/NE/2720/mockup1/index.html",
+            cat:  "mockups",
             desc: "local"
         },
         {
@@ -837,9 +862,9 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Mockup :: Request Page - 2",
+            name: "request Page - 2",
             link: "file:///C:/_work/NE/2720/mockup2/index.html",
-            cat:  "nas",
+            cat:  "mockups",
             desc: "local"
         },
         {
@@ -865,10 +890,10 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Mockup :: Request page - 1",
+            name: "request page - 1",
             link: "http://htmltest.nationwideappraisals.com/mockups/mockup1",
-            cat:  "nas",
-            desc: "top menu"
+            cat:  "mockups",
+            desc: "remote test"
         },
         {
             type: "",
@@ -893,10 +918,10 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Mockup :: Request page - 2",
+            name: "request page - 2",
             link: "http://htmltest.nationwideappraisals.com/mockups/mockup2",
-            cat:  "nas",
-            desc: "off-canvas menu"
+            cat:  "mockups",
+            desc: "remote test. off-canvas menu"
         },
         {
             type: "",
@@ -1814,7 +1839,7 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "The Scots Language",
+            name: "Scots Language, the",
             link: "https://www.youtube.com/watch?v=cENbkHS3mnY",
             cat: "language",
             desc: "by Dauvit Horsbroch"
@@ -2263,7 +2288,7 @@ window.onload = function () {
         {
             type: "",
             cat: "language",
-            name: "Scotts translator",
+            name: "Scots translator",
             link: "http://www.whoohoo.co.uk/main.asp",
             desc: ""
         },
