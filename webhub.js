@@ -367,6 +367,22 @@ window.onload = function () {
         // },
         {
             type: "",
+            name: "email - new appraisal request",
+            link: "file:///C:/_work/NE/3073/mockup1/index.html",
+            cat:  "mockups",
+            desc: "local"
+        },
+        {
+            type: "",
+            name: "email - new password request",
+            link: "file:///C:/_work/NE/3073/mockup2/index.html",
+            cat:  "mockups",
+            desc: "local"
+        },
+        
+        
+        {
+            type: "",
             name: "Scots words: all",
             link: "http://mudcat.org/scots/display_all.cfm",
             cat:  "language",
@@ -701,14 +717,14 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "email 1 - new request submitted",
+            name: "email - new request submitted",
             link: "file:///C:/_work/MAR/522/mockup1/index.html",
             cat:  "mockups",
             desc: "local"
         },
         {
             type: "",
-            name: "new request submitted",
+            name: "email - new request submitted",
             link: "http://htmltest.nationwideappraisals.com/emails/NAS-MobileApp/mockup1/",
             cat:  "mockups",
             desc: "on HTML test"
