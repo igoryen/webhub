@@ -172,6 +172,7 @@ var Filler = {
 
         var categories = {
             bible: {name: "bible", links: []},
+            codepen: {name: "codepen", links: []},
             cool: {name: "cool", links: []},
             current: {name: "current", links: []},
             entertainment: {name: "entertainment", links: []},
@@ -200,6 +201,9 @@ var Filler = {
         for (var i = 0; i < objects.length; i++) {
 
             switch (objects[i].cat) {
+                case 'codepen':
+                    categories.codepen.links.push(objects[i]);
+                    break;
                 case 'mockups':
                     categories.mockups.links.push(objects[i]);
                     break;
@@ -365,6 +369,84 @@ window.onload = function () {
         //     cat:  "",
         //     desc: ""
         // },
+        
+        {
+            type: "",
+            name: "Select get-set with JQ",
+            link: "https://codepen.io/igoryen/pen/KvrWXp",
+            cat:  "codepen",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Adaptive label in select",
+            link: "https://codepen.io/igoryen/pen/OjOgbx",
+            cat:  "codepen",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Background Image Generator",
+            link: "http://bg.siteorigin.com/",
+            cat:  "webdesign",
+            desc: "by SiteOrigin"
+        },        
+        {
+            type: "",
+            name: "Messenger",
+            link: "https://www.messenger.com/t/jenica.yentaltsev",
+            cat:  "social",
+            desc: "Facebook"
+        },
+        {
+            type: "",
+            name: "Russland the non-Russian",
+            link: "http://www.russian.kiev.ua/books/karevin/rusnorus/rusnorus.shtml",
+            cat:  "russia",
+            desc: "by Aleksandr Karevin"
+        },
+        {
+            type: "",
+            name: "Meal Diary",
+            link: "https://docs.google.com/spreadsheets/d/11nBZOTi37CX1F759w54lbgjhFNSQT8xIMKgcndfW1H0/edit#gid=0",
+            cat:  "current",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Irish to IPA",
+            link: "http://gphemsley.org/linguistics/ga/ortho2ipa/?text=%0D%0A",
+            cat:  "language",
+            desc: "gphemsley.org"
+        },
+        {
+            type: "",
+            name: "Russian Ukraine",
+            link: "https://vk.com/russian_ukraine",
+            cat:  "russia",
+            desc: "on VK"
+        },        
+        {
+            type: "",
+            name: "German cognates with English",
+            link: "https://en.wiktionary.org/wiki/Appendix:List_of_German_cognates_with_English",
+            cat:  "language",
+            desc: "wikipedia"
+        },        
+        {
+            type: "",
+            name: "Screen Sizes",
+            link: "http://screensiz.es/",
+            cat:  "webdesign",
+            desc: "screensiz.es"
+        },        
+        {
+            type: "",
+            name: "NE-3073",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-3073",
+            cat:  "nas_tickets",
+            desc: "Design: New Email Notification Template"
+        },        
         {
             type: "",
             name: "email - new appraisal request",
@@ -378,17 +460,14 @@ window.onload = function () {
             link: "file:///C:/_work/NE/3073/mockup2/index.html",
             cat:  "mockups",
             desc: "local"
-        },
-        
-        
+        }, 
         {
             type: "",
             name: "Scots words: all",
             link: "http://mudcat.org/scots/display_all.cfm",
             cat:  "language",
             desc: "mudcat.org"
-        },
-        
+        },        
         {
             type: "",
             name: "request page - 3",
@@ -516,22 +595,22 @@ window.onload = function () {
             type: "",
             name: "Round Brackets via CSS",
             link: "https://codepen.io/igoryen/pen/BRZxBp",
-            cat:  "mine",
-            desc: "codepen"
+            cat:  "codepen",
+            desc: ""
         },
         {
             type: "",
             name: "Radios as Select",
             link: "https://codepen.io/igoryen/pen/zdKxKq",
-            cat:  "mine",
-            desc: "codepen"
+            cat:  "codepen",
+            desc: ""
         },
         {
             type: "",
             name: "Adaptive placeholder on fixed-size textarea",
             link: "https://codepen.io/igoryen/pen/prNKxN",
-            cat:  "mine",
-            desc: "codepen"
+            cat:  "codepen",
+            desc: ""
         },
         {
             type: "",
