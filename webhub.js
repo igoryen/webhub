@@ -172,6 +172,7 @@ var Filler = {
 
         var categories = {
             bible: {name: "bible", links: []},
+            church: {name: "church", links: []},
             codepen: {name: "codepen", links: []},
             cool: {name: "cool", links: []},
             current: {name: "current", links: []},
@@ -194,6 +195,7 @@ var Filler = {
             useful: {name: "useful", links: []},
             war: {name: "war", links: []},
             webdesign: {name: "webdesign", links: []},
+            webdevtools: {name: "webdevtools", links: []},
         };
 
         // this.createTabs( categories );
@@ -201,6 +203,12 @@ var Filler = {
         for (var i = 0; i < objects.length; i++) {
 
             switch (objects[i].cat) {
+                case 'church':
+                    categories.church.links.push(objects[i]);
+                    break;
+                case 'webdevtools':
+                    categories.webdevtools.links.push(objects[i]);
+                    break;
                 case 'codepen':
                     categories.codepen.links.push(objects[i]);
                     break;
@@ -362,6 +370,10 @@ window.onload = function () {
 
     // 18
     var links = [
+
+
+        
+
         // {
         //     type: "",
         //     name: "",
@@ -369,7 +381,260 @@ window.onload = function () {
         //     cat:  "",
         //     desc: ""
         // },
-        
+
+
+        {
+            type: "",
+            name: "Diff Checker",
+            link: "https://www.diffchecker.com/diff",
+            cat:  "programming",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Donbass news 1",
+            link: "https://vk.com/polkdonbassa",
+            cat:  "news",
+            desc: "@vk"
+        },
+        {
+            type: "",
+            name: "Donbass news 2",
+            link: "https://vk.com/strelkov_info",
+            cat:  "news",
+            desc: "@vk"
+        },    
+        {
+            type: "",
+            name: "GMail",
+            link: "https://mail.google.com/mail/u/0/#inbox",
+            cat:  "social",
+            desc: "iy"
+        },
+        {
+            type: "",
+            name: "MC-2752",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/MC-2752",
+            cat:  "nas_tickets",
+            desc: "Our partners page"
+        },
+        {
+            type: "",
+            name: "MC-2750",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/MC-2750",
+            cat:  "nas_tickets",
+            desc: "update landing page (Carson Dunlop)"
+        },
+        {
+            type: "",
+            name: "HTML email templates",
+            link: "https://www.leemunroe.com/building-html-email/",
+            cat:  "webdesign",
+            desc: "by Lee Munroe"
+        },
+        {
+            type: "",
+            name: "Content separators: 10 ways",
+            link: "https://designshack.net/articles/graphics/separating-content-10-ways-to-draw-the-line/",
+            cat:  "webdesign",
+            desc: "by design shack"
+        },
+        {
+            type: "",
+            name: "MAR-531",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/MAR-531",
+            cat:  "nas_tickets",
+            desc: "New TNG website design proposal"
+        },
+        {
+            type: "",
+            name: "Color Converter",
+            link: "https://www.w3schools.com/colors/colors_converter.asp",
+            cat:  "webdevtools",
+            desc: "w3schools"
+        },
+        {
+            type: "",
+            name: "Bootstrap CSS Classes",
+            link: "https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp",
+            cat:  "webdesign",
+            desc: "w3schools"
+        },
+        {
+            type: "",
+            name: "Color Meanings",
+            link: "https://www.color-meanings.com/",
+            cat:  "webdesign",
+            desc: "Learn about Colors and Symbolism"
+        },        
+        {
+            type: "",
+            name: "ReachMail",
+            link: "https://ui.reachmail.net/app/#/",
+            cat:  "nas",
+            desc: "Create, deliver, and track FREE email campaigns."
+        },
+        {
+            type: "",
+            name: "CSS Inliner Tool",
+            link: "https://templates.mailchimp.com/resources/inline-css/",
+            cat:  "webdevtools",
+            desc: "weave external css into html"
+        },
+        {
+            type: "",
+            name: "A Guide to Bulletproof Buttons in Email Design",
+            link: "https://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design",
+            cat:  "webdesign",
+            desc: "litmus"
+        },
+        {
+            type: "",
+            name: "Creating Bulletproof HTML Emails",
+            link: "https://medium.com/tealmedia/creating-bulletproof-html-emails-e0e4866c3f8",
+            cat:  "webdesign",
+            desc: "by tealmedia"
+        },
+        {
+            type: "",
+            name: "Chrome inspect - pseudo classes",
+            link: "https://developers.google.com/web/updates/2015/05/triggering-of-pseudo-classes",
+            cat:  "webdesign",
+            desc: "Umar Hansa on how to trigger them in Chrome"
+        },        
+        {
+            type: "",
+            name: "SVG Color Filter Playground",
+            link: "http://kazzkiq.github.io/svg-color-filter/",
+            cat:  "webdevtools",
+            desc: "A tool to help understand how feColorMatrix works. By Claudio Holanda (@kazzkiq)."
+        },
+        {
+            type: "",
+            name: "Color Filters Can Turn Your Gray Skies Blue",
+            link: "https://css-tricks.com/color-filters-can-turn-your-gray-skies-blue/",
+            cat:  "webdesign",
+            desc: "Amelia Bellamy-Royds"
+        },
+        {
+            type: "",
+            name: "NE-3174",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-3174",
+            cat:  "nas_tickets",
+            desc: "NAS mobile - create 2 buttons"
+        },
+        {
+            type: "",
+            name: "NE-3240",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-3240",
+            cat:  "nas_tickets",
+            desc: "Sign-Up Page for Carson & Dunlop"
+        },
+        {
+            type: "",
+            name: "NE-3105",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-3105",
+            cat:  "nas_tickets",
+            desc: "NAS Domestic Request Page (Broker) QA"
+        },
+        {
+            type: "",
+            name: "NE-3123",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-3123",
+            cat:  "nas_tickets",
+            desc: "Comment Email template"
+        },        
+        {
+            type: "",
+            name: "Sovetskaja Sibir'",
+            link: "http://elib.ngonb.ru/jspui/handle/NGONB/31/browse?type=dateissued&sort_by=2&order=ASC&rpp=100&etal=-1&null=&offset=10600",
+            cat:  "russia",
+            desc: "newspaper in online archive"
+        },
+        {
+            type: "",
+            name: "Color Combos",
+            link: "http://www.colorcombos.com/index.html",
+            cat:  "webdevtools",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Montyan",
+            link: "https://www.youtube.com/user/tmontyan/videos",
+            cat:  "news",
+            desc: "@ Youtube"
+        },
+        {
+            type: "",
+            name: "Metronome",
+            link: "http://simple.bestmetronome.com/",
+            cat:  "useful",
+            desc: ""
+        },        
+        {
+            type: "",
+            name: "Color to B/W converter",
+            link: "http://www.rapidtables.com/convert/image/rgb-to-grayscale.htm",
+            cat:  "webdevtools",
+            desc: ""
+        },        
+        {
+            type: "",
+            name: "Contrast checker ",
+            link: "http://www.checkmycolours.com/",
+            cat:  "webdevtools",
+            desc: ""
+        },
+        {
+            type: "",
+            name: "Contrast Checker",
+            link: "http://webaim.org/resources/contrastchecker/",
+            cat:  "webdevtools",
+            desc: "WebAIM"
+        },        
+        {
+            type: "",
+            name: "Color Contrast Check",
+            link: "https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=B73333",
+            cat:  "webdevtools",
+            desc: "snook.ca"
+        },
+        {
+            type: "",
+            name: "Luminosity Contrast Ratio",
+            link: "http://juicystudio.com/services/luminositycontrastratio.php#specify",
+            cat:  "webdevtools",
+            desc: "juicy studio"
+        },
+        {
+            type: "",
+            name: "Da Button Factory",
+            link: "https://dabuttonfactory.com/",
+            cat:  "webdevtools",
+            desc: "Pretty call-to-action buttons, quickly!"
+        },
+        {
+            type: "",
+            name: "Campaign Monitor",
+            link: "https://www.campaignmonitor.com/company/#stigm",
+            cat:  "cool",
+            desc: "cool design"
+        },
+        {
+            type: "",
+            name: "Bulletproof background images",
+            link: "https://backgrounds.cm/",
+            cat:  "webdesign",
+            desc: "email"
+        },
+        {
+            type: "",
+            name: "LOTR movies in stills",
+            link: "http://www.tk421.net/lotr/film/",
+            cat:  "entertainment",
+            desc: ""
+        },
         {
             type: "",
             name: "Select get-set with JQ",
@@ -388,7 +653,7 @@ window.onload = function () {
             type: "",
             name: "Background Image Generator",
             link: "http://bg.siteorigin.com/",
-            cat:  "webdesign",
+            cat:  "webdev",
             desc: "by SiteOrigin"
         },        
         {
@@ -437,7 +702,7 @@ window.onload = function () {
             type: "",
             name: "Screen Sizes",
             link: "http://screensiz.es/",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: "screensiz.es"
         },        
         {
@@ -735,7 +1000,7 @@ window.onload = function () {
             type: "",
             name: "Color Hunter",
             link: "http://www.colorhunter.com/",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: ""
         },
         {
@@ -749,21 +1014,21 @@ window.onload = function () {
             type: "",
             name: "Beautify JS",
             link: "http://jsbeautifier.org/",
-            cat:  "javascript",
+            cat:  "webdevtools",
             desc: ""
         },
         {
             type: "",
             name: "Beautify CSS",
             link: "http://www.cleancss.com/css-beautify/",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: ""
         },
         {
             type: "",
             name: "Icons in UTF-8",
             link: "https://www.utf8icons.com/",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: ""
         },
         {
@@ -819,7 +1084,7 @@ window.onload = function () {
             type: "",
             name: "Color calculator from HEX to RGBA",
             link: "http://hex2rgba.devoth.com/",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: "Devoth"
         },
         {
@@ -938,7 +1203,7 @@ window.onload = function () {
             type: "",
             name: "Blind Text Generator",
             link: "http://www.blindtextgenerator.com/lorem-ipsum",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: "dummy text"
         },
         {
@@ -952,7 +1217,7 @@ window.onload = function () {
             type: "",
             name: "Color Picking tool",
             link: "http://www.hexcolortool.com/",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: "Dan's Tools"
         },
         {
@@ -961,13 +1226,6 @@ window.onload = function () {
             link: "file:///C:/_work/NE/2720/mockup2/index.html",
             cat:  "mockups",
             desc: "local"
-        },
-        {
-            type: "",
-            name: "NE-2847",
-            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-2847",
-            cat:  "nas_tickets",
-            desc: "HTML5-Schedule A [Calculation]"
         },
         {
             type: "",
@@ -1008,7 +1266,7 @@ window.onload = function () {
             type: "",
             name: "Icon Finder",
             link: "https://www.iconfinder.com/",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: ""
         },
         {
@@ -1064,7 +1322,7 @@ window.onload = function () {
             type: "",
             name: "Noise Texture Generator",
             link: "http://www.noisetexturegenerator.com/",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: "Andrew Ckor"
         },
         {
@@ -1171,7 +1429,7 @@ window.onload = function () {
             type: "",
             name: "RGB to Hex color converter",
             link: "http://www.rapidtables.com/convert/color/rgb-to-hex.htm",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: "Rapidtables"
         },
         {
@@ -1185,7 +1443,7 @@ window.onload = function () {
             type: "",
             name: "CSS Gradient Generator",
             link: "http://www.colorzilla.com/gradient-editor/",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: "Colorzilla"
         },
         {
@@ -1220,7 +1478,7 @@ window.onload = function () {
             type: "",
             name: "Color Names",
             link: "http://htmlcolorcodes.com/color-names/",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: "140 colors"
         },
 
@@ -1278,7 +1536,7 @@ window.onload = function () {
             type: "",
             name: "SASS Meister",
             link: "https://www.sassmeister.com/",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: "online SASS compiler"
         },
         
@@ -1414,8 +1672,8 @@ window.onload = function () {
             type: "",
             name: "CSS-matic",
             link: "http://www.cssmatic.com/",
-            cat:  "webdesign",
-            desc: "CSS tools: gradient generator etc."
+            cat:  "webdevtools",
+            desc: "CSS tools: gradient generator, border radius, noise texture, box shadow."
         },        
         {
             type: "",
@@ -1464,7 +1722,7 @@ window.onload = function () {
             type: "",
             name: "Color Picker",
             link: "https://www.w3schools.com/colors/colors_picker.asp",
-            cat:  "webdesign",
+            cat:  "webdevtools",
             desc: "w3schools.com"
         },
         {
@@ -1780,13 +2038,6 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Chrystia Freeland on Wikipedia",
-            link: "https://en.wikipedia.org/wiki/Chrystia_Freeland",
-            cat: "politics",
-            desc: "Prime minister of Canada"
-        },
-        {
-            type: "",
             name: "Dictionary of Russian Synonyms",
             link: "http://jeck.ru/tools/SynonymsDictionary/",
             cat: "language",
@@ -1954,11 +2205,11 @@ window.onload = function () {
             desc: "Tom Kirby tells"
         },
         {
-            type: "youtube",
-            name: "Churkin vs Power",
-            link: "WGXCzwNlzDw",
-            cat: "politics",
-            desc: "Russia, US clash at UNSC meeting, Syria envoy blames govt & opposition for escalation"
+            // type: "youtube",
+            name: "RT",
+            link: "https://www.youtube.com/user/RussiaToday",
+            cat: "news",
+            desc: ""
         },
         {
             type: "youtube",
@@ -2074,10 +2325,10 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Sharij - Youtube",
-            link: "https://www.youtube.com/watch?v=S7r0VctD0C4&list=UUVPYbobPRzz0SjinWekjUBw",
+            name: "Sharij",
+            link: "https://www.youtube.com/user/SuperSharij/videos?sort=dd&view=0&shelf_id=1",
             cat: "news",
-            desc: "The famous blogger Anatolij Sharij"
+            desc: "@ Youtube"
         },
         {
             type: "",
@@ -2403,7 +2654,7 @@ window.onload = function () {
         },
         {
             type: "",
-            cat: "webdesign",
+            cat: "webdevtools",
             name: "Color Codes",
             link: "http://htmlcolorcodes.com/",
             desc: ""
