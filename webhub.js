@@ -173,7 +173,7 @@ var Filler = {
         var categories = {
             bible: {name: "bible", links: []},
             church: {name: "church", links: []},
-            codepen: {name: "codepen", links: []},
+            snippets: {name: "snippets", links: []},
             cool: {name: "cool", links: []},
             current: {name: "current", links: []},
             entertainment: {name: "entertainment", links: []},
@@ -209,8 +209,8 @@ var Filler = {
                 case 'webdevtools':
                     categories.webdevtools.links.push(objects[i]);
                     break;
-                case 'codepen':
-                    categories.codepen.links.push(objects[i]);
+                case 'snippets':
+                    categories.snippets.links.push(objects[i]);
                     break;
                 case 'mockups':
                     categories.mockups.links.push(objects[i]);
@@ -639,14 +639,14 @@ window.onload = function () {
             type: "",
             name: "Select get-set with JQ",
             link: "https://codepen.io/igoryen/pen/KvrWXp",
-            cat:  "codepen",
+            cat:  "snippets",
             desc: ""
         },
         {
             type: "",
             name: "Adaptive label in select",
             link: "https://codepen.io/igoryen/pen/OjOgbx",
-            cat:  "codepen",
+            cat:  "snippets",
             desc: ""
         },
         {
@@ -860,21 +860,21 @@ window.onload = function () {
             type: "",
             name: "Round Brackets via CSS",
             link: "https://codepen.io/igoryen/pen/BRZxBp",
-            cat:  "codepen",
+            cat:  "snippets",
             desc: ""
         },
         {
             type: "",
             name: "Radios as Select",
             link: "https://codepen.io/igoryen/pen/zdKxKq",
-            cat:  "codepen",
+            cat:  "snippets",
             desc: ""
         },
         {
             type: "",
             name: "Adaptive placeholder on fixed-size textarea",
             link: "https://codepen.io/igoryen/pen/prNKxN",
-            cat:  "codepen",
+            cat:  "snippets",
             desc: ""
         },
         {
@@ -1049,7 +1049,7 @@ window.onload = function () {
             type: "",
             name: "Modals, responsive",
             link: "https://codepen.io/ettrics/pen/Jdjdzp",
-            cat:  "webdesign",
+            cat:  "snippets",
             desc: "by Ettrics"
         },
         {
@@ -1091,7 +1091,7 @@ window.onload = function () {
             type: "",
             name: "Adaptive Placeholder",
             link: "https://codepen.io/dannykingme/pen/IvFuB",
-            cat:  "webdesign",
+            cat:  "snippets",
             desc: "Danny King"
         },
         {
@@ -1196,7 +1196,7 @@ window.onload = function () {
             type: "",
             name: "CSS3 responsive menu dropdown + submenu with logo",
             link: "https://codepen.io/emredenx/pen/ojcxl",
-            cat:  "webdesign",
+            cat:  "snippets",
             desc: "emre"
         },
         {
@@ -1252,7 +1252,7 @@ window.onload = function () {
             type: "",
             name: "Menu: responsive, dropdown, submenu, logo",
             link: "https://codepen.io/emredenx/pen/ojcxl",
-            cat:  "webdesign",
+            cat:  "snippets",
             desc: "by emre"
         },
         {
@@ -1508,7 +1508,7 @@ window.onload = function () {
             type: "",
             name: "Off Canvas menu",
             link: "https://codepen.io/ncerminara/pen/quJpi/",
-            cat:  "webdesign",
+            cat:  "snippets",
             desc: "by Nicholas Cerminara"
         },
         {
