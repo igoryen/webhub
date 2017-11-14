@@ -381,8 +381,99 @@ window.onload = function () {
         //     cat:  "",
         //     desc: ""
         // },
+        {
+            type: "",
+            name: "6 simple CSS tricks for images",
+            link: "https://www.godaddy.com/garage/6-simple-css-tricks-for-images/",
+            cat:  "webdesign",
+            desc: "godaddy"
+        },
+        {
+            type: "",
+            name: "Module tabs - best practices",
+            link: "https://www.smashingmagazine.com/2009/06/module-tabs-in-web-design-best-practices-and-solutions/",
+            cat:  "webdesign",
+            desc: "@ smashingmagazine"
+        },
+        {
+            type: "",
+            name: "Convert image to the SVG format",
+            link: "https://image.online-convert.com/convert-to-svg",
+            cat:  "webdevtools",
+            desc: "@ online-convert.com"
+        },
+        
+        {
+            type: "",
+            name: "Ojibwe - forum",
+            link: "https://lingvoforum.net/index.php/topic,37278.0.html",
+            cat:  "language",
+            desc: "@lingvoforum"
+        },
+        {
+            type: "",
+            name: "CSS shapes",
+            link: "https://css-tricks.com/examples/ShapesOfCSS/",
+            cat:  "snippets",
+            desc: "css tricks"
+        },
+
+        
+/*
+https://99designs.ca/blog/trends/web-design-trends-2017/
+https://templates.mailchimp.com/development/responsive-email/
+
+https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/
+https://blog.trackduck.com/2015/06/25/15-captivating-parallax-effects-from-codepen/
+
+*/
 
 
+        {
+            type: "",
+            name: "EN - Cambridge Dictionary",
+            link: "https://dictionary.cambridge.org",
+            cat:  "language",
+            desc: ""
+        },
+
+
+        {
+            type: "",
+            name: "CSS Beautifier",
+            link: "https://www.cleancss.com/css-beautify/",
+            cat:  "webdevtools",
+            desc: "Dan's tools"
+        },
+        {
+            type: "",
+            name: "NUE-2159",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NUE-2159",
+            cat:  "nas_tickets",
+            desc: "collect all needed images"
+        },
+
+        {
+            type: "",
+            name: "Mokhnenko",
+            link: "https://www.youtube.com/user/Mokhnenko/videos",
+            cat:  "church",
+            desc: "@ YouTube"
+        },
+        {
+            type: "",
+            name: "Percentage Calculator",
+            link: "https://percentagecalculator.net/",
+            cat:  "useful",
+            desc: ""
+        },        
+        {
+            type: "",
+            name: "NE-3190",
+            link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-3190",
+            cat:  "nas_tickets",
+            desc: "HTML5: Full Form (CUSPAP) Design, Responsive & Cosmetic Change"
+        },
         {
             type: "",
             name: "Diff Checker",
@@ -808,7 +899,7 @@ window.onload = function () {
         
         {
             type: "",
-            name: "Sublime icons and their meanings",
+            name: "Eclipse icons and their meanings",
             link: "https://stackoverflow.com/questions/3917925/what-do-the-arrow-icons-in-subclipse-mean",
             cat:  "programming",
             desc: "on stackoverflow"
@@ -889,7 +980,8 @@ window.onload = function () {
             name: "NE-3014",
             link: "https://nasjiraatm.nationwideappraisals.com:8443/browse/NE-3014",
             cat:  "nas_tickets",
-            desc: "Disable user profile on TNGOC.com"
+            desc: "Disable user profile on TNGOC.com",
+            cls: "done"
         },
         {
             type: "",
@@ -1557,7 +1649,7 @@ window.onload = function () {
         
         {
             type: "",
-            name: "ZhongWen.com",
+            name: "CN - ZhongWen.com",
             link: "http://zhongwen.com",
             cat:  "language",
             desc: "Chinese Characters and Etymology"
@@ -1841,7 +1933,7 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "BKRS",
+            name: "CN - BKRS",
             link: "https://bkrs.info/",
             cat:  "language",
             desc: "Большой китайско-русский словарь"
@@ -1905,7 +1997,7 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "ChineseText",
+            name: "CN - ChineseText",
             link: "http://ctext.org/dictionary.pl?if=en",
             cat:  "language",
             desc: "dictionary"
@@ -1954,14 +2046,14 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Thesaurus",
+            name: "EN -Thesaurus",
             link: "http://www.thesaurus.com/",
             cat:  "language",
             desc: "for English"
         },
         {
             type: "",
-            name: "Chinese Dictionary MDBG",
+            name: "CN - MDBG",
             link: "https://www.mdbg.net/chindict/chindict.php",
             cat: "language",
             desc: ""
@@ -2038,7 +2130,7 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Dictionary of Russian Synonyms",
+            name: "RU - Dictionary of Russian Synonyms",
             link: "http://jeck.ru/tools/SynonymsDictionary/",
             cat: "language",
             desc: "more than 300K entries"
@@ -2094,7 +2186,7 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Merriam Webster",
+            name: "EN - Merriam Webster",
             link: "https://www.merriam-webster.com/",
             cat: "language",
             desc: "English Dictionary"
@@ -2353,7 +2445,7 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Urban Dictionary",
+            name: "EN - Urban Dictionary",
             link: "http://www.urbandictionary.com/",
             cat: "language",
             desc: ""
@@ -2486,7 +2578,7 @@ window.onload = function () {
         },
         {
             type: "",
-            name: "Russian Freq Dict.",
+            name: "RU - Russian Freq Dict.",
             link: "http://dict.ruslang.ru/freq.php?act=show&dic=freq_spoken&title=%D7%E0%F1%F2%EE%F2%ED%FB%E9%20%F1%EB%EE%E2%E0%F0%FC%20%E6%E8%E2%EE%E9%20%F3%F1%F2%ED%EE%E9%20%F0%E5%F7%E8",
             cat: "language",
             desc: ""
